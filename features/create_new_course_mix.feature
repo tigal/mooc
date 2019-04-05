@@ -1,6 +1,5 @@
 # Written by Nastya, corrected by Galina [comments added]
 Feature: Course Construction
-  # Enter feature description here
 
   Scenario: Adding themes from one course to another course
     Given there is a Python course
