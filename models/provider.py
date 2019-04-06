@@ -16,7 +16,7 @@ class Provider(DB.Model):
         table_name = 'providers'
 
     def __unicode__(self):
-        return '%s %s' % (self.provider_id, self.provider_name)
+        return '%s %s' % (self.provider_id, self.name)
 
     def __str__(self):
-        return '%s %s' % (self.provider_id, self.provider_name)
+        return '%s %s' % (self.provider_id, self.name)

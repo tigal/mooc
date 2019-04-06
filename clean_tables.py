@@ -86,7 +86,6 @@ def clean_ud_themes():
 
 def clean_tables():
     clean_student()
-    clean_tables()
     clean_certificate_course()
     clean_certificate_spec()
     clean_course()

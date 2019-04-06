@@ -10,7 +10,7 @@ from models.user_defined import UserDefinedCourse
 
 class CertificateCourse(DB.Model):
     cert_id = PrimaryKeyField()
-    student_id = ForeignKeyField(Student, to_field='student_id', null=False)
+    student_id = ForeignKeyField(Student, to_field='student_id', null=False, backref='certs')
     course_id = ForeignKeyField(Course, to_field='course_id', default=None)
     ud_course_id = ForeignKeyField(UserDefinedCourse, to_field='ud_course_id', default=None)
     text = CharField(10000)
@@ -19,6 +19,7 @@ class CertificateCourse(DB.Model):
 
     class Meta:
         table_name = 'certificate_course'
+
 
 
 class CertificateSpec(DB.Model):

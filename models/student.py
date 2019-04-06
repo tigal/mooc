@@ -2,6 +2,7 @@ from datetime import datetime
 from peewee import *
 
 from application import DB
+from models.course import Course
 
 
 class Student(DB.Model):
@@ -23,4 +24,13 @@ class Student(DB.Model):
 
     def __str__(self):
         return '%s %s' % (self.last_name, self.first_name)
+
+    def get_certificate(self):
+        if self.certs.select().where(): st id = course id
+            print('get cert')
+        else:
+            print('not')
+        # Course.get_themes(DB.database.execute_sql(
+        #     'select course_id from certificate_course, students where self.student_id = certificate_course.student_id'))
+
 
