@@ -12,9 +12,10 @@ def init_models(db):
     from models.schedule import Schedule
     from models.course import Course,CourseTheme,Question
     from models.quick_tests import Test,TestQuestion
+    from models.subscription import Subscription
 
     ms = [CertificateCourse, StudentAnswerQuestion, StudentFinishedTheme, StudentFinishedCourse,
-          StudentFinishedTest,StudentAnswerTestQuestion, Question, Course, Test, TestQuestion,
+          StudentFinishedTest,StudentAnswerTestQuestion, Subscription, Question, Course, Test, TestQuestion,
           UserDefinedTheme, UserDefinedCourse, CourseTheme, Schedule, Provider,
           CertificateSpec, Specialization, Student]
 
