@@ -24,9 +24,8 @@ class Course(DB.Model):
         return self.name
 
     @classmethod
-    def get_themes(cls):
-        DB.database.execute_sql(
-            'select count(*) from themes, courses where courses.course_id = themes.course_id and courses.name = self.name group by course_id').fetchone()
+    def get_themes(self, cls):
+        CourseTheme.select(CourseTheme.name).where(CourseTheme.course_id==self.course_id)
 
 #взять все темы, сравнение процентов здесь
 
