@@ -2,6 +2,7 @@ from datetime import datetime
 from peewee import *
 
 from application import DB
+from business_rules_proc import student_can_get_certificate
 from models.course import Course, CourseTheme
 from models.subscription import Subscription
 from models.student_answers import FinishedTheme
@@ -29,7 +30,7 @@ class Student(DB.Model):
         return '%s %s' % (self.last_name, self.first_name)
 
     def get_certificate(self, course_name):
-        course_id = course_id = Subscription.select(Subscription.course_id).join(Course, on=(Subscription.course_id == Course.course_id)).where(Subscription.student_id == self.student_id & Course.name == course_name)
+        course_id = Subscription.select(Subscription.course_id).join(Course, on=(Subscription.course_id == Course.course_id)).where(Subscription.student_id == self.student_id & Course.name == course_name)
         if student_can_get_certificate(self.student_id, course_id, 0):
             str = "Course name: " + course_name
             courses_themes = CourseTheme.select(CourseTheme.name).join(FinishedTheme, on=(CourseTheme.theme_id == FinishedTheme.course_id)).where(FinishedTheme.student_id == self.student_id & FinishedTheme.course_id == course_id)
@@ -41,3 +42,5 @@ class Student(DB.Model):
             print(str)
         else:
             print ('Too less themes passed. Certificate cannot be issued')
+#получить все сертификаты ... переписать
+#many to many

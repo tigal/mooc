@@ -28,6 +28,7 @@ class Course(DB.Model):
         DB.database.execute_sql(
             'select count(*) from themes, courses where courses.course_id = themes.course_id and courses.name = self.name group by course_id').fetchone()
 
+#взять все темы, сравнение процентов здесь
 
 class CourseTheme(DB.Model):
     theme_id = PrimaryKeyField()
