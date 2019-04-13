@@ -4,17 +4,9 @@
     <bookmark url="file://$PROJECT_DIR$/models/course.py" description="from datetime import datetime&#10;from peewee import *..." line="0" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a2e9072d-e9df-42cb-a167-a6fdcfe6a075" name="Default Changelist" comment="added project">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/44d99edd-56ee-422c-b3c7-a06409b4a982.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/44d99edd-56ee-422c-b3c7-a06409b4a982.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/44d99edd-56ee-422c-b3c7-a06409b4a982/storage_v2/_src_/database/tigal.PfCTBg/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/44d99edd-56ee-422c-b3c7-a06409b4a982/storage_v2/_src_/database/tigal.PfCTBg/schema/public.abK9xQ.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/ls_source.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ls_source.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="a2e9072d-e9df-42cb-a167-a6fdcfe6a075" name="Default Changelist" comment="1 us business rule">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clean_tables.py" beforeDir="false" afterPath="$PROJECT_DIR$/clean_tables.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/certificate.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/certificate.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/course.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/course.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/provider.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/provider.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/student.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/student.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -107,13 +99,46 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/models/course.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="14" column="63" lean-forward="true" selection-start-line="14" selection-start-column="63" selection-end-line="14" selection-end-column="63" />
+            <state relative-caret-position="334">
+              <caret line="28" column="75" lean-forward="true" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="75" />
               <folding>
                 <element signature="e#0#29#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/features/get_all_themes.feature">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/features/steps/get_all_themes.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="33" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="114" />
+              <folding>
+                <element signature="e#0#36#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/features/steps/get_points.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="548">
+              <caret line="43" selection-start-line="43" selection-end-line="43" />
+              <folding>
+                <element signature="e#25#61#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -132,33 +157,36 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/local_settings.py">
+        <entry file="file://$PROJECT_DIR$/models/student.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="43" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="43" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/run.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="612">
-              <caret line="39" selection-start-line="39" selection-end-line="39" />
+            <state relative-caret-position="480">
+              <caret line="46" selection-start-line="46" selection-end-line="46" />
               <folding>
-                <element signature="e#25#34#0" expanded="true" />
+                <element signature="e#0#29#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/models/student.py">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/models/subscription.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="163">
-              <caret line="24" column="22" lean-forward="true" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
+            <state relative-caret-position="238">
+              <caret line="14" column="63" selection-start-line="14" selection-start-column="63" selection-end-line="14" selection-end-column="63" />
               <folding>
                 <element signature="e#0#29#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/business_rules_proc.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="16">
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
+              <folding>
+                <element signature="e#44#119#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -180,8 +208,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/run.py" />
-        <option value="$PROJECT_DIR$/features/acheter_un_course.feature" />
         <option value="$PROJECT_DIR$/features/buy_course.feature" />
         <option value="$PROJECT_DIR$/features/steps/buy_course.py" />
         <option value="$PROJECT_DIR$/models/mooc/provider.py" />
@@ -228,9 +254,11 @@
         <option value="$PROJECT_DIR$/clean_tables.py" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
         <option value="$PROJECT_DIR$/models/provider.py" />
-        <option value="$PROJECT_DIR$/models/course.py" />
         <option value="$PROJECT_DIR$/models/certificate.py" />
         <option value="$PROJECT_DIR$/models/student.py" />
+        <option value="$PROJECT_DIR$/features/steps/get_all_themes.feature" />
+        <option value="$PROJECT_DIR$/features/steps/get_all_themes.py" />
+        <option value="$PROJECT_DIR$/models/course.py" />
       </list>
     </option>
   </component>
@@ -246,6 +274,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -273,7 +302,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -283,22 +311,22 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="SQL Dialects" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\PythonProjects\mooc\features" />
+      <recent name="$PROJECT_DIR$/features" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/models" />
+      <recent name="$PROJECT_DIR$/features/steps" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/features/steps" />
       <recent name="$PROJECT_DIR$/features" />
       <recent name="$PROJECT_DIR$/models" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/models/mooc" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/features" />
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/models" />
-      <recent name="$PROJECT_DIR$/features/steps" />
-      <recent name="$PROJECT_DIR$/models/class" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -436,7 +464,8 @@
       <workItem from="1554039120293" duration="32129000" />
       <workItem from="1554457119043" duration="3719000" />
       <workItem from="1554489504862" duration="3462000" />
-      <workItem from="1554542885164" duration="4083000" />
+      <workItem from="1554542885164" duration="5072000" />
+      <workItem from="1555141439202" duration="5758000" />
     </task>
     <task id="LOCAL-00001" summary="added project">
       <created>1552423214668</created>
@@ -445,7 +474,21 @@
       <option name="project" value="LOCAL" />
       <updated>1552423214668</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="1 us business rule">
+      <created>1554553982561</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1554553982562</updated>
+    </task>
+    <task id="LOCAL-00003" summary="1 us business rule">
+      <created>1555146709775</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1555146709776</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -481,7 +524,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="91766000" />
+    <option name="totallyTimeSpent" value="98513000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -496,7 +539,31 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21028744" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21331316" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32829374" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3270142" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39956802" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32937366" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32829374" />
+      <window_info anchor="bottom" id="Database Changes" order="9" weight="0.32937366" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.25908372" />
+      <window_info anchor="bottom" id="Python Console" order="12" weight="0.32937366" />
+      <window_info anchor="bottom" id="Database Console" order="13" weight="0.32937366" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" weight="0.32982844" />
+      <window_info anchor="right" id="Database" order="4" weight="0.18835099" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21331316" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -518,14 +585,15 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="SciView" order="3" weight="0.32982844" />
       <window_info anchor="right" id="Database" order="4" weight="0.18835099" />
-    </layout>
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added project" />
-    <option name="LAST_COMMIT_MESSAGE" value="added project" />
+    <MESSAGE value="1 us business rule" />
+    <option name="LAST_COMMIT_MESSAGE" value="1 us business rule" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -560,119 +628,6 @@
     <SUITE FILE_PATH="coverage/ls_source$create_new_course_drop_feature.coverage" NAME="create_new_course_drop.feature Coverage Results" MODIFIED="1554459929480" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="uml://Python/#/home/galina/Downloads/ls_source/models">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>Python</ID>
-          <OriginalElement>#/home/galina/Downloads/ls_source/models</OriginalElement>
-          <nodes>
-            <node x="0.0" y="102.0">models.course.Course</node>
-            <node x="491.0" y="138.0">models.subscription.Subscription</node>
-            <node x="1955.0" y="174.0">models.specialization.Specialization</node>
-            <node x="1241.0" y="150.0">models.course.Questions</node>
-            <node x="1470.0" y="150.0">models.course.Course_themes</node>
-            <node x="1011.0" y="138.0">models.provider.Provider</node>
-            <node x="776.0" y="150.0">models.schedule.Schedule</node>
-            <node x="206.0" y="138.0">models.student.Student_answers</node>
-            <node x="1077.5" y="0.0">Model</node>
-            <node x="1734.0" y="102.0">models.student.Student</node>
-          </nodes>
-          <notes />
-          <edges>
-            <edge source="models.course.Course" target="Model">
-              <point x="0.0" y="-112.0" />
-              <point x="93.0" y="52.0" />
-              <point x="1081.7777777777778" y="52.0" />
-              <point x="-34.22222222222217" y="16.0" />
-            </edge>
-            <edge source="models.student.Student_answers" target="Model">
-              <point x="0.0" y="-76.0" />
-              <point x="338.5" y="62.0" />
-              <point x="1090.3333333333333" y="62.0" />
-              <point x="-25.666666666666742" y="16.0" />
-            </edge>
-            <edge source="models.provider.Provider" target="Model">
-              <point x="0.0" y="-76.0" />
-              <point x="0.0" y="16.0" />
-            </edge>
-            <edge source="models.student.Student" target="Model">
-              <point x="0.0" y="-112.0" />
-              <point x="1834.5" y="62.0" />
-              <point x="1141.6666666666667" y="62.0" />
-              <point x="25.666666666666742" y="16.0" />
-            </edge>
-            <edge source="models.schedule.Schedule" target="Model">
-              <point x="0.0" y="-64.0" />
-              <point x="883.5" y="82.0" />
-              <point x="1107.4444444444443" y="82.0" />
-              <point x="-8.555555555555657" y="16.0" />
-            </edge>
-            <edge source="models.course.Questions" target="Model">
-              <point x="0.0" y="-64.0" />
-              <point x="1345.5" y="82.0" />
-              <point x="1124.5555555555557" y="82.0" />
-              <point x="8.555555555555657" y="16.0" />
-            </edge>
-            <edge source="models.specialization.Specialization" target="Model">
-              <point x="0.0" y="-40.0" />
-              <point x="2095.5" y="52.0" />
-              <point x="1150.2222222222222" y="52.0" />
-              <point x="34.22222222222217" y="16.0" />
-            </edge>
-            <edge source="models.course.Course_themes" target="Model">
-              <point x="0.0" y="-64.0" />
-              <point x="1592.0" y="72.0" />
-              <point x="1133.111111111111" y="72.0" />
-              <point x="17.111111111111086" y="16.0" />
-            </edge>
-            <edge source="models.subscription.Subscription" target="Model">
-              <point x="0.0" y="-76.0" />
-              <point x="623.5" y="72.0" />
-              <point x="1098.888888888889" y="72.0" />
-              <point x="-17.111111111111086" y="16.0" />
-            </edge>
-          </edges>
-          <settings layout="Hierarchic Group" zoom="1.0" x="712.0" y="120.0" />
-          <SelectedNodes>
-            <node>models.course.Course</node>
-          </SelectedNodes>
-          <Categories>
-            <Category>Fields</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://DATABASE/44d99edd-56ee-422c-b3c7-a06409b4a982">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>DATABASE</ID>
-          <OriginalElement>44d99edd-56ee-422c-b3c7-a06409b4a982</OriginalElement>
-          <nodes>
-            <node x="" y="">44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.schedule</node>
-            <node x="" y="">44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.certificate_spec</node>
-            <node x="" y="">44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.user</node>
-            <node x="" y="">44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.specializations</node>
-            <node x="" y="">44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.student_answers</node>
-            <node x="" y="">44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.courses</node>
-            <node x="" y="">44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.students</node>
-            <node x="" y="">44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.themes</node>
-            <node x="" y="">44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.certificate_course</node>
-            <node x="" y="">44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.providers</node>
-            <node x="" y="">44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.questions</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="0.5122171945701357" x="503.0" y="480.0" />
-          <SelectedNodes />
-          <Categories>
-            <Category>Key columns</Category>
-            <Category>Columns</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/44d99edd-56ee-422c-b3c7-a06409b4a982/console.sql" />
     <entry file="file://$PROJECT_DIR$/services/product.py" />
     <entry file="file://$PROJECT_DIR$/services/categories.py" />
@@ -1006,16 +961,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/features/steps/get_points.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
-          <folding>
-            <element signature="e#25#61#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/features/app.feature">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1064,13 +1009,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="33" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/features/get_points.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="18" selection-start-column="18" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -1132,23 +1070,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/business_rules_proc.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="26" column="2" selection-start-line="26" selection-start-column="2" selection-end-line="26" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/subscription.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="14" column="63" selection-start-line="14" selection-start-column="63" selection-end-line="14" selection-end-column="63" />
-          <folding>
-            <element signature="e#0#29#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/models/user_defined.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
@@ -1156,23 +1077,6 @@
           <folding>
             <element signature="e#1#30#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/run.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="39" selection-start-line="39" selection-end-line="39" />
-          <folding>
-            <element signature="e#25#34#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/local_settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="43" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="43" />
         </state>
       </provider>
     </entry>
@@ -1207,22 +1111,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/features/steps/get_test_certificate.py">
+    <entry file="file://$PROJECT_DIR$/local_settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-          <folding>
-            <element signature="e#25#61#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="170">
+          <caret line="10" column="43" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="43" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/course.py">
+    <entry file="file://$PROJECT_DIR$/run.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="14" column="63" lean-forward="true" selection-start-line="14" selection-start-column="63" selection-end-line="14" selection-end-column="63" />
+        <state relative-caret-position="612">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
           <folding>
-            <element signature="e#0#29#0" expanded="true" />
+            <element signature="e#25#34#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1237,10 +1138,84 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/business_rules_proc.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+          <folding>
+            <element signature="e#44#119#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/subscription.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="63" selection-start-line="14" selection-start-column="63" selection-end-line="14" selection-end-column="63" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/features/steps/get_test_certificate.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="e#25#61#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/features/get_points.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" selection-start-line="11" selection-end-line="15" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/features/steps/get_points.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="548">
+          <caret line="43" selection-start-line="43" selection-end-line="43" />
+          <folding>
+            <element signature="e#25#61#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/models/student.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="24" column="22" lean-forward="true" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
+        <state relative-caret-position="480">
+          <caret line="46" selection-start-line="46" selection-end-line="46" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/features/get_all_themes.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/features/steps/get_all_themes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="33" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="114" />
+          <folding>
+            <element signature="e#0#36#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/course.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="334">
+          <caret line="28" column="75" lean-forward="true" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="75" />
           <folding>
             <element signature="e#0#29#0" expanded="true" />
           </folding>
