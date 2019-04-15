@@ -20,7 +20,7 @@ def create_app():
 APP = create_app()  # Инициируем приложение
 
 DB = Database(APP)  # Инициируем работу с БД. Тут же создаюётся таблицы, если их нет в БД.
-#init_models(DB)
+init_models(DB)
 
 API = RestAPI(APP)  # Инициируем RestAPI от peewee
 init_api(API)

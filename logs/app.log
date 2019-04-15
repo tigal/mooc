@@ -2036,3 +2036,51 @@ ImportError: cannot import name DB
 2019-04-04 15:50:28,210 [MainThread  ] [WARNI]   * Debugger is active!
 2019-04-05 13:24:05,255 [MainThread  ] [WARNI]   * Debugger is active!
 2019-04-05 13:24:50,074 [MainThread  ] [WARNI]   * Debugger is active!
+2019-04-15 18:38:03,709 [MainThread  ] [WARNI]   * Debugger is active!
+2019-04-15 18:39:29,236 [MainThread  ] [ERROR]  cannot import name 'Student'
+Traceback (most recent call last):
+  File "run.py", line 40, in <module>
+    from application import APP
+  File "/home/galina/Downloads/ls_source/application.py", line 23, in <module>
+    init_models(DB)
+  File "/home/galina/Downloads/ls_source/models/__init__.py", line 6, in init_models
+    from models.student import Student
+  File "/home/galina/Downloads/ls_source/models/student.py", line 5, in <module>
+    from business_rules_proc import student_can_get_certificate
+  File "/home/galina/Downloads/ls_source/business_rules_proc.py", line 4, in <module>
+    from models.student_answers import StudentFinishedTheme,StudentFinishedTest
+  File "/home/galina/Downloads/ls_source/models/student_answers.py", line 6, in <module>
+    from models.student import Student
+ImportError: cannot import name 'Student'
+2019-04-15 18:39:57,963 [MainThread  ] [WARNI]   * Debugger is active!
+2019-04-15 18:40:36,068 [MainThread  ] [WARNI]   * Debugger is active!
+2019-04-15 18:40:46,207 [MainThread  ] [ERROR]  cannot import name 'Student'
+Traceback (most recent call last):
+  File "run.py", line 40, in <module>
+    from application import APP
+  File "/home/galina/Downloads/ls_source/application.py", line 23, in <module>
+    init_models(DB)
+  File "/home/galina/Downloads/ls_source/models/__init__.py", line 6, in init_models
+    from models.student import Student
+  File "/home/galina/Downloads/ls_source/models/student.py", line 5, in <module>
+    from business_rules_proc import student_can_get_certificate
+  File "/home/galina/Downloads/ls_source/business_rules_proc.py", line 4, in <module>
+    from models.student_answers import StudentFinishedTheme,StudentFinishedTest
+  File "/home/galina/Downloads/ls_source/models/student_answers.py", line 6, in <module>
+    from models.student import Student
+ImportError: cannot import name 'Student'
+2019-04-15 18:41:22,119 [MainThread  ] [ERROR]  cannot import name 'Student'
+Traceback (most recent call last):
+  File "run.py", line 40, in <module>
+    from application import APP
+  File "/home/galina/Downloads/ls_source/application.py", line 23, in <module>
+    init_models(DB)
+  File "/home/galina/Downloads/ls_source/models/__init__.py", line 6, in init_models
+    from models.student import Student
+  File "/home/galina/Downloads/ls_source/models/student.py", line 5, in <module>
+    from models.certificate import CertificateCourse
+  File "/home/galina/Downloads/ls_source/models/certificate.py", line 5, in <module>
+    from models.student import Student
+ImportError: cannot import name 'Student'
+2019-04-15 18:42:20,526 [MainThread  ] [WARNI]   * Debugger is active!
+2019-04-15 18:42:52,594 [MainThread  ] [WARNI]   * Debugger is active!
