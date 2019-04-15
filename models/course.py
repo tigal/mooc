@@ -38,8 +38,8 @@ class Course(DB.Model):
 
     @classmethod
     def get_finished_themes(cls,student_id):
-        CourseTheme.select(CourseTheme.name).join(FinishedTheme,
-                                                  on=(CourseTheme.theme_id == FinishedTheme.course_id)).where(
+        return CourseTheme.select(CourseTheme.name).join(FinishedTheme,
+                                                         on=(CourseTheme.theme_id == FinishedTheme.course_id)).where(
             FinishedTheme.student_id == student_id & FinishedTheme.course_id == cls.course_id)
 
     @classmethod

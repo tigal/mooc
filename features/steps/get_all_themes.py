@@ -5,13 +5,12 @@ from models.course import CourseTheme
 
 @given('Python course with course_id=4')
 def python_course(context):
-    for row in context.table:
-        try:
-             context.course = Course.get(Course.name.where(Course.course_id == 4))
-        except Course.DoesNotExist:
-            Course.create(course_id=4,
-                          course_name='Python')
-            context.course = Course.get(Course.name.where(Course.course_id == 4))
+     try:
+         context.course = Course.get(Course.name.where(Course.course_id == 4))
+     except Course.DoesNotExist:
+         Course.create(course_id=4,
+                       course_name='Python')
+         context.course = Course.get(Course.name.where(Course.course_id == 4))
 
 
 @given('the list of themes')
