@@ -24,10 +24,38 @@ class Course(DB.Model):
         return self.name
 
     @classmethod
-    def get_themes(self, cls):
-        CourseTheme.select(CourseTheme.name).where(CourseTheme.course_id==self.course_id)
+    def get_themes(cls):
+        return CourseTheme.select(CourseTheme.name).where(CourseTheme.course_id==cls.course_id)
 
-#взять все темы, сравнение процентов здесь
+    @classmethod
+    def can_get_certificate(cls, student_id):
+        student_themes_cnt = StudentFinishedTheme.select().where(StudentFinishedTheme.student_id == student_id &
+                                                           StudentFinishedTheme.course_id == cls.course_id).count()
+        courses_themes_cnt = cls.get_themes.count()
+        if round(student_themes_cnt/courses_themes_cnt) >= cls.certificate_get:
+            return True
+        return False
+
+    @classmethod
+    def get_finished_themes(cls,student_id):
+        CourseTheme.select(CourseTheme.name).join(FinishedTheme,
+                                                  on=(CourseTheme.theme_id == FinishedTheme.course_id)).where(
+            FinishedTheme.student_id == student_id & FinishedTheme.course_id == cls.course_id)
+
+    @classmethod
+    def get_certificate(cls, student_id):
+        if cls.can_get_certificate(student_id):
+            str = "Course name: " + cls.course_name
+            courses_themes = course.get_finished_themes(student_id)
+            str += "Themes: \n"
+            for row in courses_themes:
+                str += row["name"] + '\n'
+            # create new certificate
+            CertificateCourse.insert(student_id=student_id, course_id=cls.course_id, text = str)
+            print(str)
+        else:
+            print ('Too less themes passed. Certificate cannot be issued')
+
 
 class CourseTheme(DB.Model):
     theme_id = PrimaryKeyField()
