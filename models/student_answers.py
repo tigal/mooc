@@ -26,6 +26,7 @@ class StudentFinishedTheme(DB.Model):
 
     st_theme_id = PrimaryKeyField()
     student_id = ForeignKeyField(Student, to_field= 'student_id')
+    course_id = ForeignKeyField(Course, to_field='course_id')
     theme_id = ForeignKeyField(CourseTheme, to_field='theme_id')
     ud_theme_id = ForeignKeyField(UserDefinedTheme, to_field='ud_theme_id', default=None)
     points = IntegerField(default=0, null=False)

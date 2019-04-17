@@ -2,23 +2,45 @@
 
 from application import DB
 from behave import given,when,then
+from models.course import Course,CourseTheme
+from models.student_answers import StudentFinishedTheme
 
 
-@given('I passed "{pas}" themes in "Intermediate JavaScript" course')
-def positive_course_completion(context, pas):
-    # calculate 3/5 percentage - progress on this course
-    res = DB.database.execute_sql('select count(*) from themes,courses where courses.course_id = themes.course_id and courses.name = "Intermediate JavaScript" group by course_id').fetchone()
-    if res[0] != 0:
-        context.user_progress = pas/res[0]
-    else:
-        context.user_progress = 0
+@given('Intermediate JavaScript course themes')
+def interm_js_themes(context):
+    #create course
+    try:
+        context.course = Course.get(Course.name.where(Course.name == 'Intermediate JavaScript'))
+    except Course.DoesNotExist:
+        Course.create(course_name='Intermediate JavaScript')
+        context.course = Course.select().where(Course.name == 'Intermediate JavaScript')
+    context.student_id = 1
+    #create themes
+    try:
+        context.themes_list = context.course.get_themes()
+    except CourseTheme.DoesNotExist:
+        for row in context.table:
+            CourseTheme.create(course_id=row['course_id'],
+                               name=row['name'],
+                               points=row['points'])
+
+@given('I passed 3 themes in Intermediate JavaScript course')
+def positive_course_completion(context):
+    #save finished_themes
+    try:
+        context.themes_list = context.course.get_finished_themes(1)
+    except StudentFinishedTheme.DoesNotExist:
+        for row in context.table:
+            StudentFinishedTheme.create(student_id=1,
+                                        course_id=row['course_id'],
+                                        theme_id=row['theme_id'],
+                                        points=row['points'])
 
 
 @given("To get the certificate more than 30% of this course should be done")
 def certificate_generating_constant(context):
     # get Intermediate JavaScript row, take certificate_get value
-    res = DB.database.execute_sql('select certificate_get from courses where name = "Intermediate JavaScript"').fetchone()
-    context.certificate_generating_percent = res[0]
+    context.certificate_generating_percent = context.course.get_certificate
 
 
 @when("I want to get a certificate")
@@ -29,6 +51,6 @@ def clicking_certificate_generation(context):
 @then("The system generate a certificate with the list of passed topics and progress mark 60%")
 def successful_generating(context):
     # check if progress percentage is more or equal to certificate_generating_percent
-    if context.user_progress >= context.certificate_generating_percent and context.request_certificate_generation:
+    if context.request_certificate_generation and context.course.get_certificate(context.student_id):
         print("Certificate was generated")
 

@@ -2,11 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b84b79c0-1138-49b6-b314-e6feea91c367" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/ls_source.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ls_source.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application.py" beforeDir="false" afterPath="$PROJECT_DIR$/application.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/app.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/app.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/student.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/student.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/features/get_all_themes.feature" beforeDir="false" afterPath="$PROJECT_DIR$/features/get_all_themes.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/features/get_course_certificate.feature" beforeDir="false" afterPath="$PROJECT_DIR$/features/get_course_certificate.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/features/steps/get_all_themes.py" beforeDir="false" afterPath="$PROJECT_DIR$/features/steps/get_all_themes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/features/steps/get_course_certificate.py" beforeDir="false" afterPath="$PROJECT_DIR$/features/steps/get_course_certificate.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/course.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/course.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/student_answers.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/student_answers.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -70,319 +72,37 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="uml://DATABASE/44d99edd-56ee-422c-b3c7-a06409b4a982">
-          <provider selected="true" editor-type-id="UmlEditorProvider">
-            <state>
-              <ID>DATABASE</ID>
-              <OriginalElement>44d99edd-56ee-422c-b3c7-a06409b4a982</OriginalElement>
-              <nodes>
-                <node x="0.0" y="1228.0">44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.user</node>
-                <node x="1159.304783950617" y="1024.0">44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.student_fin_themes</node>
-                <node x="1445.2578703703707" y="540.0">44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.themes</node>
-                <node x="1154.9826388888891" y="0.0">44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.providers</node>
-                <node x="1021.7995370370373" y="528.0">44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.ud_courses</node>
-                <node x="1640.5295524691355" y="1012.0">44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.student_answers</node>
-                <node x="237.43287037037067" y="781.0">44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.student_answers_test_q</node>
-                <node x="638.5034722222222" y="769.0">44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.subscriptions</node>
-                <node x="173.58333333333348" y="231.0">44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.tests</node>
-                <node x="197.0" y="540.0">44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.test_questions</node>
-                <node x="1154.9826388888891" y="231.0">44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.courses</node>
-                <node x="1689.357638888889" y="793.0">44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.questions</node>
-                <node x="842.5034722222223" y="781.0">44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.student_fin_courses</node>
-                <node x="0.0" y="516.0">44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.certificate_spec</node>
-                <node x="423.0" y="540.0">44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.student_fin_tests</node>
-                <node x="1285.357638888889" y="805.0">44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.ud_themes</node>
-                <node x="608.7534722222223" y="36.0">44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.specializations</node>
-                <node x="1086.357638888889" y="757.0">44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.certificate_course</node>
-                <node x="1485.357638888889" y="781.0">44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.schedule</node>
-                <node x="589.8368055555557" y="207.0">44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.students</node>
-              </nodes>
-              <notes />
-              <edges>
-                <edge source="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.schedule" target="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.courses">
-                  <point x="46.0" y="-73.5" />
-                  <point x="1623.357638888889" y="737.0" />
-                  <point x="1658.7957561728394" y="737.0" />
-                  <point x="1658.7957561728394" y="486.0" />
-                  <point x="1343.082638888889" y="486.0" />
-                  <point x="83.60000000000002" y="85.5" />
-                </edge>
-                <edge source="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.certificate_course" target="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.courses">
-                  <point x="59.66666666666663" y="-97.5" />
-                  <point x="1235.5243055555557" y="737.0" />
-                  <point x="1272.9245370370375" y="737.0" />
-                  <point x="1272.9245370370375" y="496.0" />
-                  <point x="1259.4826388888891" y="496.0" />
-                  <point x="0.0" y="85.5" />
-                </edge>
-                <edge source="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.student_fin_themes" target="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.themes">
-                  <point x="59.33333333333337" y="-73.5" />
-                  <point x="1307.6381172839506" y="992.0" />
-                  <point x="1474.857638888889" y="992.0" />
-                  <point x="1474.857638888889" y="737.0" />
-                  <point x="1504.8828703703707" y="737.0" />
-                  <point x="-19.875" y="61.5" />
-                </edge>
-                <edge source="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.student_answers_test_q" target="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.students">
-                  <point x="68.66666666666674" y="-73.5" />
-                  <point x="409.0995370370374" y="737.0" />
-                  <point x="595.5" y="737.0" />
-                  <point x="595.5" y="476.0" />
-                  <point x="647.8923611111113" y="476.0" />
-                  <point x="-46.44444444444434" y="109.5" />
-                </edge>
-                <edge source="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.themes" target="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.courses">
-                  <point x="0.0" y="-61.5" />
-                  <point x="1524.7578703703707" y="496.0" />
-                  <point x="1301.282638888889" y="496.0" />
-                  <point x="41.80000000000007" y="85.5" />
-                </edge>
-                <edge source="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.subscriptions" target="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.courses">
-                  <point x="0.0" y="-85.5" />
-                  <point x="730.5034722222222" y="737.0" />
-                  <point x="705.3368055555557" y="737.0" />
-                  <point x="705.3368055555557" y="486.0" />
-                  <point x="1175.882638888889" y="486.0" />
-                  <point x="-83.60000000000002" y="85.5" />
-                </edge>
-                <edge source="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.student_answers_test_q" target="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.tests">
-                  <point x="-68.66666666666674" y="-73.5" />
-                  <point x="271.7662037037039" y="737.0" />
-                  <point x="186.5" y="737.0" />
-                  <point x="186.5" y="446.0" />
-                  <point x="208.41666666666674" y="446.0" />
-                  <point x="-69.66666666666674" y="85.5" />
-                </edge>
-                <edge source="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.ud_themes" target="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.themes">
-                  <point x="44.75" y="-49.5" />
-                  <point x="1419.607638888889" y="737.0" />
-                  <point x="1465.1328703703707" y="737.0" />
-                  <point x="-59.625" y="61.5" />
-                </edge>
-                <edge source="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.student_fin_themes" target="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.students">
-                  <point x="-59.33333333333337" y="-73.5" />
-                  <point x="1188.9714506172838" y="992.0" />
-                  <point x="623.4166666666667" y="992.0" />
-                  <point x="623.4166666666667" y="486.0" />
-                  <point x="671.1145833333335" y="486.0" />
-                  <point x="-23.22222222222217" y="109.5" />
-                </edge>
-                <edge source="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.tests" target="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.providers">
-                  <point x="52.25" y="-85.5" />
-                  <point x="330.3333333333335" y="187.0" />
-                  <point x="1207.2326388888891" y="187.0" />
-                  <point x="-52.25" y="73.5" />
-                </edge>
-                <edge source="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.student_answers_test_q" target="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.test_questions">
-                  <point x="0.0" y="-73.5" />
-                  <point x="340.43287037037067" y="737.0" />
-                  <point x="300.0" y="737.0" />
-                  <point x="0.0" y="61.5" />
-                </edge>
-                <edge source="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.ud_courses" target="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.students">
-                  <point x="-52.25" y="-73.5" />
-                  <point x="1074.0495370370372" y="466.0" />
-                  <point x="740.78125" y="466.0" />
-                  <point x="46.44444444444434" y="109.5" />
-                </edge>
-                <edge source="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.student_answers" target="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.students">
-                  <point x="73.125" y="-85.5" />
-                  <point x="1811.1545524691355" y="992.0" />
-                  <point x="1911.857638888889" y="992.0" />
-                  <point x="1911.857638888889" y="446.0" />
-                  <point x="787.2256944444446" y="446.0" />
-                  <point x="92.88888888888891" y="109.5" />
-                </edge>
-                <edge source="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.questions" target="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.themes">
-                  <point x="0.0" y="-61.5" />
-                  <point x="1789.857638888889" y="727.0" />
-                  <point x="1544.6328703703707" y="727.0" />
-                  <point x="19.875" y="61.5" />
-                </edge>
-                <edge source="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.certificate_spec" target="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.students">
-                  <point x="44.000000000000114" y="-85.5" />
-                  <point x="132.0000000000001" y="456.0" />
-                  <point x="601.4479166666667" y="456.0" />
-                  <point x="-92.88888888888891" y="109.5" />
-                </edge>
-                <edge source="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.student_fin_tests" target="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.students">
-                  <point x="40.5" y="-61.5" />
-                  <point x="544.5" y="466.0" />
-                  <point x="624.6701388888889" y="466.0" />
-                  <point x="-69.66666666666674" y="109.5" />
-                </edge>
-                <edge source="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.test_questions" target="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.tests">
-                  <point x="0.0" y="-61.5" />
-                  <point x="300.0" y="446.0" />
-                  <point x="278.0833333333335" y="446.0" />
-                  <point x="0.0" y="85.5" />
-                </edge>
-                <edge source="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.ud_courses" target="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.specializations">
-                  <point x="52.25" y="-73.5" />
-                  <point x="1178.5495370370372" y="476.0" />
-                  <point x="1111.420138888889" y="476.0" />
-                  <point x="1111.420138888889" y="177.0" />
-                  <point x="703.1284722222223" y="177.0" />
-                  <point x="18.875" y="37.5" />
-                </edge>
-                <edge source="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.student_answers" target="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.ud_themes">
-                  <point x="-73.125" y="-85.5" />
-                  <point x="1664.9045524691355" y="982.0" />
-                  <point x="1419.607638888889" y="982.0" />
-                  <point x="44.75" y="49.5" />
-                </edge>
-                <edge source="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.student_fin_courses" target="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.students">
-                  <point x="-59.66666666666663" y="-73.5" />
-                  <point x="872.3368055555557" y="717.0" />
-                  <point x="852.45" y="717.0" />
-                  <point x="852.45" y="476.0" />
-                  <point x="717.5590277777778" y="476.0" />
-                  <point x="23.22222222222217" y="109.5" />
-                </edge>
-                <edge source="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.certificate_course" target="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.ud_courses">
-                  <point x="-59.66666666666663" y="-97.5" />
-                  <point x="1116.1909722222224" y="737.0" />
-                  <point x="1126.2995370370372" y="737.0" />
-                  <point x="0.0" y="73.5" />
-                </edge>
-                <edge source="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.certificate_spec" target="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.specializations">
-                  <point x="-43.999999999999886" y="-85.5" />
-                  <point x="44.00000000000023" y="167.0" />
-                  <point x="627.6284722222223" y="167.0" />
-                  <point x="-56.625" y="37.5" />
-                </edge>
-                <edge source="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.schedule" target="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.ud_courses">
-                  <point x="-46.0" y="-73.5" />
-                  <point x="1531.357638888889" y="707.0" />
-                  <point x="1209.8995370370374" y="707.0" />
-                  <point x="83.60000000000002" y="73.5" />
-                </edge>
-                <edge source="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.ud_themes" target="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.ud_courses">
-                  <point x="-44.75" y="-49.5" />
-                  <point x="1330.107638888889" y="717.0" />
-                  <point x="1168.0995370370374" y="717.0" />
-                  <point x="41.80000000000007" y="73.5" />
-                </edge>
-                <edge source="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.student_fin_themes" target="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.ud_themes">
-                  <point x="0.0" y="-73.5" />
-                  <point x="1248.304783950617" y="982.0" />
-                  <point x="1330.107638888889" y="982.0" />
-                  <point x="-44.75" y="49.5" />
-                </edge>
-                <edge source="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.subscriptions" target="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.students">
-                  <point x="-61.33333333333326" y="-85.5" />
-                  <point x="669.1701388888889" y="737.0" />
-                  <point x="674.6666666666667" y="737.0" />
-                  <point x="674.6666666666667" y="496.0" />
-                  <point x="694.3368055555557" y="496.0" />
-                  <point x="0.0" y="109.5" />
-                </edge>
-                <edge source="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.student_answers" target="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.themes">
-                  <point x="24.375" y="-85.5" />
-                  <point x="1762.4045524691355" y="982.0" />
-                  <point x="1900.857638888889" y="982.0" />
-                  <point x="1900.857638888889" y="717.0" />
-                  <point x="1584.3828703703707" y="717.0" />
-                  <point x="59.625" y="61.5" />
-                </edge>
-                <edge source="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.courses" target="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.providers">
-                  <point x="52.25" y="-85.5" />
-                  <point x="52.25" y="73.5" />
-                </edge>
-                <edge source="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.tests" target="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.specializations">
-                  <point x="-52.25" y="-85.5" />
-                  <point x="225.83333333333348" y="177.0" />
-                  <point x="665.3784722222223" y="177.0" />
-                  <point x="-18.875" y="37.5" />
-                </edge>
-                <edge source="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.subscriptions" target="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.ud_courses">
-                  <point x="61.33333333333326" y="-85.5" />
-                  <point x="791.8368055555554" y="727.0" />
-                  <point x="1042.6995370370373" y="727.0" />
-                  <point x="-83.60000000000002" y="73.5" />
-                </edge>
-                <edge source="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.courses" target="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.specializations">
-                  <point x="-52.25" y="-85.5" />
-                  <point x="1207.2326388888891" y="167.0" />
-                  <point x="740.8784722222223" y="167.0" />
-                  <point x="56.625" y="37.5" />
-                </edge>
-                <edge source="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.certificate_course" target="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.students">
-                  <point x="0.0" y="-97.5" />
-                  <point x="1175.857638888889" y="727.0" />
-                  <point x="1241.2995370370375" y="727.0" />
-                  <point x="1241.2995370370375" y="456.0" />
-                  <point x="764.0034722222224" y="456.0" />
-                  <point x="69.66666666666674" y="109.5" />
-                </edge>
-                <edge source="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.student_fin_courses" target="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.ud_courses">
-                  <point x="59.66666666666674" y="-73.5" />
-                  <point x="991.670138888889" y="737.0" />
-                  <point x="1084.4995370370375" y="737.0" />
-                  <point x="-41.799999999999955" y="73.5" />
-                </edge>
-                <edge source="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.student_answers" target="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.questions">
-                  <point x="-24.375" y="-85.5" />
-                  <point x="1713.6545524691355" y="972.0" />
-                  <point x="1789.857638888889" y="972.0" />
-                  <point x="0.0" y="61.5" />
-                </edge>
-                <edge source="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.student_fin_tests" target="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.tests">
-                  <point x="-40.5" y="-61.5" />
-                  <point x="463.5" y="446.0" />
-                  <point x="347.7500000000002" y="446.0" />
-                  <point x="69.66666666666674" y="85.5" />
-                </edge>
-                <edge source="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.student_fin_courses" target="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.courses">
-                  <point x="0.0" y="-73.5" />
-                  <point x="932.0034722222223" y="717.0" />
-                  <point x="907.6701388888889" y="717.0" />
-                  <point x="907.6701388888889" y="496.0" />
-                  <point x="1217.682638888889" y="496.0" />
-                  <point x="-41.799999999999955" y="85.5" />
-                </edge>
-              </edges>
-              <settings layout="Hierarchic Group" zoom="0.3560179977502812" x="1461.6666666666667" y="689.78672985782" />
-              <SelectedNodes>
-                <node>44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.user</node>
-              </SelectedNodes>
-              <Categories>
-                <Category>Key columns</Category>
-                <Category>Columns</Category>
-              </Categories>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/run.py">
+        <entry file="file://$PROJECT_DIR$/features/steps/get_course_certificate.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="585">
-              <caret line="39" selection-start-line="39" selection-end-line="39" />
+            <state relative-caret-position="61">
+              <caret line="24" column="35" selection-start-line="24" selection-start-column="35" selection-end-line="24" selection-end-column="35" />
               <folding>
-                <element signature="e#25#34#0" expanded="true" />
+                <element signature="e#25#51#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/certificate.py">
+        <entry file="file://$PROJECT_DIR$/features/steps/get_all_themes.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" selection-start-line="4" selection-end-line="4" />
+            <state relative-caret-position="75">
+              <caret line="5" column="23" lean-forward="true" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+              <folding>
+                <element signature="e#0#36#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application.py">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/models/course.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="22" selection-start-line="22" selection-end-line="22" />
+            <state relative-caret-position="271">
+              <caret line="35" column="50" selection-start-line="35" selection-start-column="50" selection-end-line="35" selection-end-column="50" />
               <folding>
-                <element signature="e#25#48#0" expanded="true" />
+                <element signature="e#0#29#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -391,27 +111,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/models/student_answers.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" selection-start-line="5" selection-end-line="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="das://44d99edd-56ee-422c-b3c7-a06409b4a982/database/tigal/schema/public/table/specializations">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true">
-                <filter text="" />
-              </filtering>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/subscription.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="420">
+              <caret line="28" column="59" selection-start-line="28" selection-start-column="59" selection-end-line="28" selection-end-column="59" />
               <folding>
                 <element signature="e#0#29#0" expanded="true" />
               </folding>
@@ -420,34 +121,57 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/business_rules_proc.py">
+        <entry file="file://$PROJECT_DIR$/features/steps/get_test_certificate.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
+              <folding>
+                <element signature="e#25#61#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/features/steps/search_course.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="182">
+              <caret line="20" column="26" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
+              <folding>
+                <element signature="e#25#61#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/features/steps/create_new_course_mix.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/features/get_course_certificate.feature">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="375">
+              <caret line="25" column="60" selection-start-line="25" selection-start-column="60" selection-end-line="25" selection-end-column="60" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/features/get_all_themes.feature">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="45">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
-              <folding>
-                <element signature="e#44#119#0" expanded="true" />
-              </folding>
+              <caret line="3" column="23" lean-forward="true" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/student.py">
+        <entry file="file://$PROJECT_DIR$/features/get_points.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="28" column="95" selection-start-line="28" selection-start-column="95" selection-end-line="28" selection-end-column="95" />
-              <folding>
-                <element signature="e#0#29#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/__init__.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" selection-start-line="5" selection-end-line="5" />
+            <state>
+              <caret column="18" selection-start-column="18" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -460,11 +184,14 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/features/get_all_themes.feature" />
-        <option value="$PROJECT_DIR$/features/steps/get_all_themes.py" />
-        <option value="$PROJECT_DIR$/models/course.py" />
         <option value="$PROJECT_DIR$/application.py" />
         <option value="$PROJECT_DIR$/models/student.py" />
+        <option value="$PROJECT_DIR$/models/course.py" />
+        <option value="$PROJECT_DIR$/features/get_all_themes.feature" />
+        <option value="$PROJECT_DIR$/models/student_answers.py" />
+        <option value="$PROJECT_DIR$/features/steps/get_course_certificate.py" />
+        <option value="$PROJECT_DIR$/features/steps/get_all_themes.py" />
+        <option value="$PROJECT_DIR$/features/get_course_certificate.feature" />
       </list>
     </option>
   </component>
@@ -480,7 +207,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -508,12 +234,14 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.console.LAST_STATE" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
@@ -538,18 +266,20 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1555341922031</updated>
-      <workItem from="1555341947354" duration="1019000" />
+      <workItem from="1555341947354" duration="1732000" />
+      <workItem from="1555344410821" duration="180000" />
+      <workItem from="1555508886188" duration="2877000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5833000" />
+    <option name="totallyTimeSpent" value="9603000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2246818" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23021583" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -570,7 +300,7 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="SciView" order="3" weight="0.32982844" />
-      <window_info active="true" anchor="right" id="Database" order="4" visible="true" weight="0.19147758" />
+      <window_info anchor="right" id="Database" order="4" visible="true" weight="0.19147758" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -591,23 +321,6 @@
     <SUITE FILE_PATH="coverage/ls_source$create_new_course_drop_feature.coverage" NAME="create_new_course_drop.feature Coverage Results" MODIFIED="1554459929480" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/features/search_course.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="2" selection-start-column="2" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/features/steps/get_test_certificate.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-          <folding>
-            <element signature="e#25#61#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="das://44d99edd-56ee-422c-b3c7-a06409b4a982/database/tigal/schema/public/table/certificate_course">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -617,66 +330,308 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/features/get_all_themes.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/features/steps/search_course.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="20" column="26" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
-          <folding>
-            <element signature="e#25#61#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/features/get_points.feature">
-      <provider selected="true" editor-type-id="text-editor">
+    <entry file="uml://DATABASE/44d99edd-56ee-422c-b3c7-a06409b4a982">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
         <state>
-          <caret column="18" selection-start-column="18" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/features/steps/get_points.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="32" selection-start-line="32" selection-end-line="32" />
-          <folding>
-            <element signature="e#25#61#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/features/steps/get_all_themes.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="38" selection-start-line="38" selection-end-line="38" />
-          <folding>
-            <element signature="e#0#36#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/course.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="27" column="79" selection-start-line="27" selection-start-column="79" selection-end-line="27" selection-end-column="79" />
-          <folding>
-            <element signature="e#0#29#0" expanded="true" />
-          </folding>
+          <ID>DATABASE</ID>
+          <OriginalElement>44d99edd-56ee-422c-b3c7-a06409b4a982</OriginalElement>
+          <nodes>
+            <node x="0.0" y="1258.0">44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.user</node>
+            <node x="582.9131944444447" y="1054.0">44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.student_fin_themes</node>
+            <node x="320.04251543209864" y="560.0">44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.themes</node>
+            <node x="492.87499999999994" y="0.0">44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.providers</node>
+            <node x="492.87499999999994" y="241.0">44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.courses</node>
+            <node x="60.026350308642236" y="1042.0">44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.student_answers</node>
+            <node x="1529.5208333333333" y="811.0">44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.student_answers_test_q</node>
+            <node x="594.0535108024692" y="548.0">44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.ud_courses</node>
+            <node x="646.5" y="799.0">44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.subscriptions</node>
+            <node x="1562.7708333333333" y="241.0">44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.tests</node>
+            <node x="1044.3958333333333" y="36.0">44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.specializations</node>
+            <node x="1677.7708333333333" y="560.0">44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.test_questions</node>
+            <node x="1118.1041666666665" y="217.0">44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.students</node>
+            <node x="21.5" y="823.0">44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.questions</node>
+            <node x="898.7708333333333" y="811.0">44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.student_fin_courses</node>
+            <node x="1297.7708333333333" y="536.0">44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.certificate_spec</node>
+            <node x="1494.7708333333333" y="560.0">44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.student_fin_tests</node>
+            <node x="447.5" y="835.0">44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.ud_themes</node>
+            <node x="1097.7708333333333" y="787.0">44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.certificate_course</node>
+            <node x="242.5" y="811.0">44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.schedule</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.schedule" target="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.courses">
+              <point x="-46.0" y="-73.5" />
+              <point x="288.5" y="727.0" />
+              <point x="263.16751543209864" y="727.0" />
+              <point x="263.16751543209864" y="456.0" />
+              <point x="513.775" y="456.0" />
+              <point x="-83.59999999999997" y="85.5" />
+            </edge>
+            <edge source="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.certificate_course" target="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.courses">
+              <point x="0.0" y="-97.5" />
+              <point x="1187.2708333333333" y="767.0" />
+              <point x="1211.6041666666665" y="767.0" />
+              <point x="1211.6041666666665" y="456.0" />
+              <point x="680.9749999999999" y="456.0" />
+              <point x="83.60000000000002" y="85.5" />
+            </edge>
+            <edge source="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.student_answers_test_q" target="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.students">
+              <point x="-68.66666666666674" y="-73.5" />
+              <point x="1563.8541666666665" y="767.0" />
+              <point x="1484.2708333333333" y="767.0" />
+              <point x="1484.2708333333333" y="496.0" />
+              <point x="1292.2708333333333" y="496.0" />
+              <point x="69.66666666666669" y="109.5" />
+            </edge>
+            <edge source="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.themes" target="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.courses">
+              <point x="0.0" y="-61.5" />
+              <point x="399.54251543209864" y="466.0" />
+              <point x="555.5749999999999" y="466.0" />
+              <point x="-41.8" y="85.5" />
+            </edge>
+            <edge source="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.student_fin_themes" target="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.themes">
+              <point x="-59.33333333333337" y="-73.5" />
+              <point x="612.5798611111113" y="1012.0" />
+              <point x="437.0" y="1012.0" />
+              <point x="437.0" y="747.0" />
+              <point x="419.41751543209864" y="747.0" />
+              <point x="19.875" y="61.5" />
+            </edge>
+            <edge source="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.subscriptions" target="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.courses">
+              <point x="-61.33333333333334" y="-85.5" />
+              <point x="677.1666666666666" y="747.0" />
+              <point x="557.4285108024691" y="747.0" />
+              <point x="557.4285108024691" y="476.0" />
+              <point x="597.375" y="476.0" />
+              <point x="0.0" y="85.5" />
+            </edge>
+            <edge source="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.student_answers_test_q" target="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.tests">
+              <point x="0.0" y="-73.5" />
+              <point x="1632.5208333333333" y="767.0" />
+              <point x="1667.2708333333333" y="767.0" />
+              <point x="0.0" y="85.5" />
+            </edge>
+            <edge source="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.ud_themes" target="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.themes">
+              <point x="-44.75" y="-49.5" />
+              <point x="492.25" y="747.0" />
+              <point x="459.16751543209864" y="747.0" />
+              <point x="59.625" y="61.5" />
+            </edge>
+            <edge source="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.student_fin_themes" target="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.students">
+              <point x="59.33333333333334" y="-73.5" />
+              <point x="731.246527777778" y="1022.0" />
+              <point x="1287.2708333333333" y="1022.0" />
+              <point x="1287.2708333333333" y="516.0" />
+              <point x="1245.826388888889" y="516.0" />
+              <point x="23.22222222222223" y="109.5" />
+            </edge>
+            <edge source="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.tests" target="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.providers">
+              <point x="-52.25" y="-85.5" />
+              <point x="1615.0208333333333" y="177.0" />
+              <point x="649.625" y="177.0" />
+              <point x="52.25" y="73.5" />
+            </edge>
+            <edge source="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.student_answers_test_q" target="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.test_questions">
+              <point x="68.66666666666667" y="-73.5" />
+              <point x="1701.1875" y="767.0" />
+              <point x="1780.7708333333333" y="767.0" />
+              <point x="0.0" y="61.5" />
+            </edge>
+            <edge source="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.student_answers" target="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.students">
+              <point x="-73.125" y="-85.5" />
+              <point x="84.40135030864224" y="1022.0" />
+              <point x="0.0" y="1022.0" />
+              <point x="0.0" y="486.0" />
+              <point x="1129.7152777777778" y="486.0" />
+              <point x="-92.88888888888889" y="109.5" />
+            </edge>
+            <edge source="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.ud_courses" target="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.students">
+              <point x="52.25" y="-73.5" />
+              <point x="750.8035108024692" y="496.0" />
+              <point x="1152.9375" y="496.0" />
+              <point x="-69.66666666666666" y="109.5" />
+            </edge>
+            <edge source="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.certificate_spec" target="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.students">
+              <point x="-44.0" y="-85.5" />
+              <point x="1341.7708333333333" y="506.0" />
+              <point x="1269.048611111111" y="506.0" />
+              <point x="46.44444444444446" y="109.5" />
+            </edge>
+            <edge source="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.questions" target="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.themes">
+              <point x="0.0" y="-61.5" />
+              <point x="122.0" y="747.0" />
+              <point x="379.66751543209864" y="747.0" />
+              <point x="-19.875" y="61.5" />
+            </edge>
+            <edge source="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.student_fin_tests" target="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.students">
+              <point x="-40.5" y="-61.5" />
+              <point x="1535.2708333333333" y="486.0" />
+              <point x="1315.4930555555557" y="486.0" />
+              <point x="92.88888888888891" y="109.5" />
+            </edge>
+            <edge source="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.test_questions" target="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.tests">
+              <point x="0.0" y="-61.5" />
+              <point x="1780.7708333333333" y="516.0" />
+              <point x="1736.9375" y="516.0" />
+              <point x="69.66666666666669" y="85.5" />
+            </edge>
+            <edge source="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.ud_courses" target="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.specializations">
+              <point x="-52.25" y="-73.5" />
+              <point x="646.3035108024692" y="476.0" />
+              <point x="745.4375" y="476.0" />
+              <point x="745.4375" y="197.0" />
+              <point x="1101.0208333333333" y="197.0" />
+              <point x="-18.875" y="37.5" />
+            </edge>
+            <edge source="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.student_answers" target="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.ud_themes">
+              <point x="73.125" y="-85.5" />
+              <point x="230.65135030864224" y="1022.0" />
+              <point x="492.25" y="1022.0" />
+              <point x="-44.75" y="49.5" />
+            </edge>
+            <edge source="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.student_fin_courses" target="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.students">
+              <point x="59.66666666666666" y="-73.5" />
+              <point x="1047.9375" y="767.0" />
+              <point x="1062.438348765432" y="767.0" />
+              <point x="1062.438348765432" y="516.0" />
+              <point x="1199.3819444444443" y="516.0" />
+              <point x="-23.22222222222223" y="109.5" />
+            </edge>
+            <edge source="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.certificate_spec" target="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.specializations">
+              <point x="44.0" y="-85.5" />
+              <point x="1429.7708333333333" y="516.0" />
+              <point x="1487.6050154320985" y="516.0" />
+              <point x="1487.6050154320985" y="197.0" />
+              <point x="1138.7708333333333" y="197.0" />
+              <point x="18.875" y="37.5" />
+            </edge>
+            <edge source="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.certificate_course" target="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.ud_courses">
+              <point x="-59.66666666666666" y="-97.5" />
+              <point x="1127.6041666666665" y="747.0" />
+              <point x="782.1535108024691" y="747.0" />
+              <point x="83.60000000000002" y="73.5" />
+            </edge>
+            <edge source="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.schedule" target="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.ud_courses">
+              <point x="46.0" y="-73.5" />
+              <point x="380.5" y="757.0" />
+              <point x="614.9535108024692" y="757.0" />
+              <point x="-83.6" y="73.5" />
+            </edge>
+            <edge source="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.ud_themes" target="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.ud_courses">
+              <point x="44.75" y="-49.5" />
+              <point x="581.75" y="767.0" />
+              <point x="656.7535108024691" y="767.0" />
+              <point x="-41.8" y="73.5" />
+            </edge>
+            <edge source="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.student_fin_themes" target="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.ud_themes">
+              <point x="0.0" y="-73.5" />
+              <point x="671.9131944444447" y="1002.0" />
+              <point x="581.75" y="1002.0" />
+              <point x="44.75" y="49.5" />
+            </edge>
+            <edge source="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.subscriptions" target="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.students">
+              <point x="61.33333333333334" y="-85.5" />
+              <point x="799.8333333333334" y="767.0" />
+              <point x="851.3035108024692" y="767.0" />
+              <point x="851.3035108024692" y="506.0" />
+              <point x="1176.1597222222222" y="506.0" />
+              <point x="-46.44444444444446" y="109.5" />
+            </edge>
+            <edge source="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.courses" target="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.providers">
+              <point x="-52.25" y="-85.5" />
+              <point x="-52.25" y="73.5" />
+            </edge>
+            <edge source="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.tests" target="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.specializations">
+              <point x="52.25" y="-85.5" />
+              <point x="1719.5208333333333" y="167.0" />
+              <point x="1176.5208333333333" y="167.0" />
+              <point x="56.625" y="37.5" />
+            </edge>
+            <edge source="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.student_answers" target="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.themes">
+              <point x="-24.375" y="-85.5" />
+              <point x="133.15135030864224" y="1012.0" />
+              <point x="11.0" y="1012.0" />
+              <point x="11.0" y="737.0" />
+              <point x="339.91751543209864" y="737.0" />
+              <point x="-59.625" y="61.5" />
+            </edge>
+            <edge source="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.subscriptions" target="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.ud_courses">
+              <point x="0.0" y="-85.5" />
+              <point x="738.5" y="767.0" />
+              <point x="698.5535108024692" y="767.0" />
+              <point x="0.0" y="73.5" />
+            </edge>
+            <edge source="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.courses" target="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.specializations">
+              <point x="52.25" y="-85.5" />
+              <point x="649.625" y="187.0" />
+              <point x="1063.2708333333333" y="187.0" />
+              <point x="-56.625" y="37.5" />
+            </edge>
+            <edge source="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.certificate_course" target="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.students">
+              <point x="59.666666666666686" y="-97.5" />
+              <point x="1246.9375" y="767.0" />
+              <point x="1222.6041666666665" y="767.0" />
+              <point x="0.0" y="109.5" />
+            </edge>
+            <edge source="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.student_fin_courses" target="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.ud_courses">
+              <point x="-59.66666666666666" y="-73.5" />
+              <point x="928.6041666666666" y="757.0" />
+              <point x="740.3535108024691" y="757.0" />
+              <point x="41.80000000000001" y="73.5" />
+            </edge>
+            <edge source="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.student_answers" target="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.questions">
+              <point x="24.375" y="-85.5" />
+              <point x="181.90135030864224" y="1002.0" />
+              <point x="122.0" y="1002.0" />
+              <point x="0.0" y="61.5" />
+            </edge>
+            <edge source="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.student_fin_courses" target="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.courses">
+              <point x="0.0" y="-73.5" />
+              <point x="988.2708333333333" y="767.0" />
+              <point x="1012.6041666666666" y="767.0" />
+              <point x="1012.6041666666666" y="466.0" />
+              <point x="639.175" y="466.0" />
+              <point x="41.80000000000001" y="85.5" />
+            </edge>
+            <edge source="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.student_fin_tests" target="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.tests">
+              <point x="40.5" y="-61.5" />
+              <point x="1616.2708333333333" y="516.0" />
+              <point x="1597.6041666666665" y="516.0" />
+              <point x="-69.66666666666667" y="85.5" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="1.0" x="240.0" y="240.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Key columns</Category>
+            <Category>Columns</Category>
+          </Categories>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/run.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
+        <state relative-caret-position="540">
           <caret line="39" selection-start-line="39" selection-end-line="39" />
           <folding>
             <element signature="e#25#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/certificate.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+          <folding>
+            <element signature="e#25#48#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -699,16 +654,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-          <folding>
-            <element signature="e#25#48#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/business_rules_proc.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -719,10 +664,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/student_answers.py">
+    <entry file="file://$PROJECT_DIR$/models/student.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        <state relative-caret-position="375">
+          <caret line="28" column="95" selection-start-line="28" selection-start-column="95" selection-end-line="28" selection-end-column="95" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -733,303 +681,110 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/certificate.py">
+    <entry file="file://$PROJECT_DIR$/features/get_test_certificate.feature">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/features/create_new_course_mix.feature">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/features/search_course.feature">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        <state>
+          <caret column="2" selection-start-column="2" selection-end-column="2" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/student.py">
+    <entry file="file://$PROJECT_DIR$/features/steps/get_points.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+          <folding>
+            <element signature="e#25#61#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/features/steps/get_test_certificate.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="e#25#61#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/features/steps/search_course.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="20" column="26" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
+          <folding>
+            <element signature="e#25#61#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/features/steps/create_new_course_mix.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/student_answers.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
-          <caret line="28" column="95" selection-start-line="28" selection-start-column="95" selection-end-line="28" selection-end-column="95" />
+          <caret line="28" column="59" selection-start-line="28" selection-start-column="59" selection-end-line="28" selection-end-column="59" />
           <folding>
             <element signature="e#0#29#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="uml://DATABASE/44d99edd-56ee-422c-b3c7-a06409b4a982">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
+    <entry file="file://$PROJECT_DIR$/features/get_points.feature">
+      <provider selected="true" editor-type-id="text-editor">
         <state>
-          <ID>DATABASE</ID>
-          <OriginalElement>44d99edd-56ee-422c-b3c7-a06409b4a982</OriginalElement>
-          <nodes>
-            <node x="0.0" y="1228.0">44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.user</node>
-            <node x="1159.304783950617" y="1024.0">44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.student_fin_themes</node>
-            <node x="1445.2578703703707" y="540.0">44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.themes</node>
-            <node x="1154.9826388888891" y="0.0">44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.providers</node>
-            <node x="1021.7995370370373" y="528.0">44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.ud_courses</node>
-            <node x="1640.5295524691355" y="1012.0">44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.student_answers</node>
-            <node x="237.43287037037067" y="781.0">44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.student_answers_test_q</node>
-            <node x="638.5034722222222" y="769.0">44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.subscriptions</node>
-            <node x="173.58333333333348" y="231.0">44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.tests</node>
-            <node x="197.0" y="540.0">44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.test_questions</node>
-            <node x="1154.9826388888891" y="231.0">44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.courses</node>
-            <node x="1689.357638888889" y="793.0">44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.questions</node>
-            <node x="842.5034722222223" y="781.0">44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.student_fin_courses</node>
-            <node x="0.0" y="516.0">44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.certificate_spec</node>
-            <node x="423.0" y="540.0">44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.student_fin_tests</node>
-            <node x="1285.357638888889" y="805.0">44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.ud_themes</node>
-            <node x="608.7534722222223" y="36.0">44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.specializations</node>
-            <node x="1086.357638888889" y="757.0">44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.certificate_course</node>
-            <node x="1485.357638888889" y="781.0">44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.schedule</node>
-            <node x="589.8368055555557" y="207.0">44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.students</node>
-          </nodes>
-          <notes />
-          <edges>
-            <edge source="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.schedule" target="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.courses">
-              <point x="46.0" y="-73.5" />
-              <point x="1623.357638888889" y="737.0" />
-              <point x="1658.7957561728394" y="737.0" />
-              <point x="1658.7957561728394" y="486.0" />
-              <point x="1343.082638888889" y="486.0" />
-              <point x="83.60000000000002" y="85.5" />
-            </edge>
-            <edge source="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.certificate_course" target="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.courses">
-              <point x="59.66666666666663" y="-97.5" />
-              <point x="1235.5243055555557" y="737.0" />
-              <point x="1272.9245370370375" y="737.0" />
-              <point x="1272.9245370370375" y="496.0" />
-              <point x="1259.4826388888891" y="496.0" />
-              <point x="0.0" y="85.5" />
-            </edge>
-            <edge source="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.student_fin_themes" target="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.themes">
-              <point x="59.33333333333337" y="-73.5" />
-              <point x="1307.6381172839506" y="992.0" />
-              <point x="1474.857638888889" y="992.0" />
-              <point x="1474.857638888889" y="737.0" />
-              <point x="1504.8828703703707" y="737.0" />
-              <point x="-19.875" y="61.5" />
-            </edge>
-            <edge source="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.student_answers_test_q" target="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.students">
-              <point x="68.66666666666674" y="-73.5" />
-              <point x="409.0995370370374" y="737.0" />
-              <point x="595.5" y="737.0" />
-              <point x="595.5" y="476.0" />
-              <point x="647.8923611111113" y="476.0" />
-              <point x="-46.44444444444434" y="109.5" />
-            </edge>
-            <edge source="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.themes" target="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.courses">
-              <point x="0.0" y="-61.5" />
-              <point x="1524.7578703703707" y="496.0" />
-              <point x="1301.282638888889" y="496.0" />
-              <point x="41.80000000000007" y="85.5" />
-            </edge>
-            <edge source="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.subscriptions" target="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.courses">
-              <point x="0.0" y="-85.5" />
-              <point x="730.5034722222222" y="737.0" />
-              <point x="705.3368055555557" y="737.0" />
-              <point x="705.3368055555557" y="486.0" />
-              <point x="1175.882638888889" y="486.0" />
-              <point x="-83.60000000000002" y="85.5" />
-            </edge>
-            <edge source="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.student_answers_test_q" target="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.tests">
-              <point x="-68.66666666666674" y="-73.5" />
-              <point x="271.7662037037039" y="737.0" />
-              <point x="186.5" y="737.0" />
-              <point x="186.5" y="446.0" />
-              <point x="208.41666666666674" y="446.0" />
-              <point x="-69.66666666666674" y="85.5" />
-            </edge>
-            <edge source="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.ud_themes" target="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.themes">
-              <point x="44.75" y="-49.5" />
-              <point x="1419.607638888889" y="737.0" />
-              <point x="1465.1328703703707" y="737.0" />
-              <point x="-59.625" y="61.5" />
-            </edge>
-            <edge source="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.student_fin_themes" target="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.students">
-              <point x="-59.33333333333337" y="-73.5" />
-              <point x="1188.9714506172838" y="992.0" />
-              <point x="623.4166666666667" y="992.0" />
-              <point x="623.4166666666667" y="486.0" />
-              <point x="671.1145833333335" y="486.0" />
-              <point x="-23.22222222222217" y="109.5" />
-            </edge>
-            <edge source="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.tests" target="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.providers">
-              <point x="52.25" y="-85.5" />
-              <point x="330.3333333333335" y="187.0" />
-              <point x="1207.2326388888891" y="187.0" />
-              <point x="-52.25" y="73.5" />
-            </edge>
-            <edge source="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.student_answers_test_q" target="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.test_questions">
-              <point x="0.0" y="-73.5" />
-              <point x="340.43287037037067" y="737.0" />
-              <point x="300.0" y="737.0" />
-              <point x="0.0" y="61.5" />
-            </edge>
-            <edge source="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.ud_courses" target="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.students">
-              <point x="-52.25" y="-73.5" />
-              <point x="1074.0495370370372" y="466.0" />
-              <point x="740.78125" y="466.0" />
-              <point x="46.44444444444434" y="109.5" />
-            </edge>
-            <edge source="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.student_answers" target="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.students">
-              <point x="73.125" y="-85.5" />
-              <point x="1811.1545524691355" y="992.0" />
-              <point x="1911.857638888889" y="992.0" />
-              <point x="1911.857638888889" y="446.0" />
-              <point x="787.2256944444446" y="446.0" />
-              <point x="92.88888888888891" y="109.5" />
-            </edge>
-            <edge source="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.questions" target="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.themes">
-              <point x="0.0" y="-61.5" />
-              <point x="1789.857638888889" y="727.0" />
-              <point x="1544.6328703703707" y="727.0" />
-              <point x="19.875" y="61.5" />
-            </edge>
-            <edge source="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.certificate_spec" target="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.students">
-              <point x="44.000000000000114" y="-85.5" />
-              <point x="132.0000000000001" y="456.0" />
-              <point x="601.4479166666667" y="456.0" />
-              <point x="-92.88888888888891" y="109.5" />
-            </edge>
-            <edge source="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.student_fin_tests" target="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.students">
-              <point x="40.5" y="-61.5" />
-              <point x="544.5" y="466.0" />
-              <point x="624.6701388888889" y="466.0" />
-              <point x="-69.66666666666674" y="109.5" />
-            </edge>
-            <edge source="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.test_questions" target="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.tests">
-              <point x="0.0" y="-61.5" />
-              <point x="300.0" y="446.0" />
-              <point x="278.0833333333335" y="446.0" />
-              <point x="0.0" y="85.5" />
-            </edge>
-            <edge source="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.ud_courses" target="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.specializations">
-              <point x="52.25" y="-73.5" />
-              <point x="1178.5495370370372" y="476.0" />
-              <point x="1111.420138888889" y="476.0" />
-              <point x="1111.420138888889" y="177.0" />
-              <point x="703.1284722222223" y="177.0" />
-              <point x="18.875" y="37.5" />
-            </edge>
-            <edge source="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.student_answers" target="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.ud_themes">
-              <point x="-73.125" y="-85.5" />
-              <point x="1664.9045524691355" y="982.0" />
-              <point x="1419.607638888889" y="982.0" />
-              <point x="44.75" y="49.5" />
-            </edge>
-            <edge source="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.student_fin_courses" target="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.students">
-              <point x="-59.66666666666663" y="-73.5" />
-              <point x="872.3368055555557" y="717.0" />
-              <point x="852.45" y="717.0" />
-              <point x="852.45" y="476.0" />
-              <point x="717.5590277777778" y="476.0" />
-              <point x="23.22222222222217" y="109.5" />
-            </edge>
-            <edge source="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.certificate_course" target="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.ud_courses">
-              <point x="-59.66666666666663" y="-97.5" />
-              <point x="1116.1909722222224" y="737.0" />
-              <point x="1126.2995370370372" y="737.0" />
-              <point x="0.0" y="73.5" />
-            </edge>
-            <edge source="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.certificate_spec" target="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.specializations">
-              <point x="-43.999999999999886" y="-85.5" />
-              <point x="44.00000000000023" y="167.0" />
-              <point x="627.6284722222223" y="167.0" />
-              <point x="-56.625" y="37.5" />
-            </edge>
-            <edge source="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.schedule" target="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.ud_courses">
-              <point x="-46.0" y="-73.5" />
-              <point x="1531.357638888889" y="707.0" />
-              <point x="1209.8995370370374" y="707.0" />
-              <point x="83.60000000000002" y="73.5" />
-            </edge>
-            <edge source="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.ud_themes" target="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.ud_courses">
-              <point x="-44.75" y="-49.5" />
-              <point x="1330.107638888889" y="717.0" />
-              <point x="1168.0995370370374" y="717.0" />
-              <point x="41.80000000000007" y="73.5" />
-            </edge>
-            <edge source="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.student_fin_themes" target="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.ud_themes">
-              <point x="0.0" y="-73.5" />
-              <point x="1248.304783950617" y="982.0" />
-              <point x="1330.107638888889" y="982.0" />
-              <point x="-44.75" y="49.5" />
-            </edge>
-            <edge source="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.subscriptions" target="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.students">
-              <point x="-61.33333333333326" y="-85.5" />
-              <point x="669.1701388888889" y="737.0" />
-              <point x="674.6666666666667" y="737.0" />
-              <point x="674.6666666666667" y="496.0" />
-              <point x="694.3368055555557" y="496.0" />
-              <point x="0.0" y="109.5" />
-            </edge>
-            <edge source="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.student_answers" target="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.themes">
-              <point x="24.375" y="-85.5" />
-              <point x="1762.4045524691355" y="982.0" />
-              <point x="1900.857638888889" y="982.0" />
-              <point x="1900.857638888889" y="717.0" />
-              <point x="1584.3828703703707" y="717.0" />
-              <point x="59.625" y="61.5" />
-            </edge>
-            <edge source="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.courses" target="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.providers">
-              <point x="52.25" y="-85.5" />
-              <point x="52.25" y="73.5" />
-            </edge>
-            <edge source="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.tests" target="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.specializations">
-              <point x="-52.25" y="-85.5" />
-              <point x="225.83333333333348" y="177.0" />
-              <point x="665.3784722222223" y="177.0" />
-              <point x="-18.875" y="37.5" />
-            </edge>
-            <edge source="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.subscriptions" target="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.ud_courses">
-              <point x="61.33333333333326" y="-85.5" />
-              <point x="791.8368055555554" y="727.0" />
-              <point x="1042.6995370370373" y="727.0" />
-              <point x="-83.60000000000002" y="73.5" />
-            </edge>
-            <edge source="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.courses" target="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.specializations">
-              <point x="-52.25" y="-85.5" />
-              <point x="1207.2326388888891" y="167.0" />
-              <point x="740.8784722222223" y="167.0" />
-              <point x="56.625" y="37.5" />
-            </edge>
-            <edge source="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.certificate_course" target="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.students">
-              <point x="0.0" y="-97.5" />
-              <point x="1175.857638888889" y="727.0" />
-              <point x="1241.2995370370375" y="727.0" />
-              <point x="1241.2995370370375" y="456.0" />
-              <point x="764.0034722222224" y="456.0" />
-              <point x="69.66666666666674" y="109.5" />
-            </edge>
-            <edge source="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.student_fin_courses" target="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.ud_courses">
-              <point x="59.66666666666674" y="-73.5" />
-              <point x="991.670138888889" y="737.0" />
-              <point x="1084.4995370370375" y="737.0" />
-              <point x="-41.799999999999955" y="73.5" />
-            </edge>
-            <edge source="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.student_answers" target="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.questions">
-              <point x="-24.375" y="-85.5" />
-              <point x="1713.6545524691355" y="972.0" />
-              <point x="1789.857638888889" y="972.0" />
-              <point x="0.0" y="61.5" />
-            </edge>
-            <edge source="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.student_fin_tests" target="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.tests">
-              <point x="-40.5" y="-61.5" />
-              <point x="463.5" y="446.0" />
-              <point x="347.7500000000002" y="446.0" />
-              <point x="69.66666666666674" y="85.5" />
-            </edge>
-            <edge source="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.student_fin_courses" target="44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.courses">
-              <point x="0.0" y="-73.5" />
-              <point x="932.0034722222223" y="717.0" />
-              <point x="907.6701388888889" y="717.0" />
-              <point x="907.6701388888889" y="496.0" />
-              <point x="1217.682638888889" y="496.0" />
-              <point x="-41.799999999999955" y="85.5" />
-            </edge>
-          </edges>
-          <settings layout="Hierarchic Group" zoom="0.3560179977502812" x="1461.6666666666667" y="689.78672985782" />
-          <SelectedNodes>
-            <node>44d99edd-56ee-422c-b3c7-a06409b4a982.TABLE:tigal.public.user</node>
-          </SelectedNodes>
-          <Categories>
-            <Category>Key columns</Category>
-            <Category>Columns</Category>
-          </Categories>
+          <caret column="18" selection-start-column="18" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/features/steps/get_all_themes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="23" lean-forward="true" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#36#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/features/get_all_themes.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="23" lean-forward="true" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/features/get_course_certificate.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="60" selection-start-line="25" selection-start-column="60" selection-end-line="25" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/features/steps/get_course_certificate.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="61">
+          <caret line="24" column="35" selection-start-line="24" selection-start-column="35" selection-end-line="24" selection-end-column="35" />
+          <folding>
+            <element signature="e#25#51#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/course.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="35" column="50" selection-start-line="35" selection-start-column="50" selection-end-line="35" selection-end-column="50" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

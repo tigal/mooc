@@ -1,29 +1,27 @@
 from behave import given, when, then
 
-from models.course import CourseTheme
+from models.course import Course,CourseTheme
 
 
-@given('Python course with course_id=4')
+@given('Python course')
 def python_course(context):
-     try:
-         context.course = Course.get(Course.name.where(Course.course_id == 4))
-     except Course.DoesNotExist:
-         Course.create(course_id=4,
-                       course_name='Python')
-         context.course = Course.get(Course.name.where(Course.course_id == 4))
+    try:
+        context.course = Course.get(Course.name.where(Course.name == "Python"))
+    except Course.DoesNotExist:
+        Course.create(course_name='Python')
+        context.course = Course.select().where(Course.name == "Python")
 
 
 @given('the list of themes')
 def reading_themes(context):
-    for row in context.table:
-        try:
-            context.themes_list =  context.course.get_themes()
-        except CourseTheme.DoesNotExist:
-            CourseTheme.create(course_id = row['course_id'],
-                               theme_id=row['theme_id'],
+    try:
+        context.themes_list = context.course.get_themes()
+    except CourseTheme.DoesNotExist:
+        for row in context.table:
+            CourseTheme.create(course_id=row['course_id'],
+                               name=row['name'],
                                points=row['points'])
-                                #name?
-        if context.themes_list is empty:
+        if not context.themes_list:
             context.themes_list = context.course.get_themes()
 
 
