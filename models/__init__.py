@@ -5,8 +5,8 @@ def init_models(db):
 
     from models.student import Student
     from models.certificate import CertificateCourse,CertificateSpec
-    from models.user_defined import UserDefinedCourse,UserDefinedTheme
     from models.student_answers import StudentAnswerQuestion,StudentFinishedTheme,StudentFinishedCourse,StudentFinishedTest,StudentAnswerTestQuestion
+    from models.user_defined import UserDefinedCourse,UserDefinedTheme
     from models.provider import Provider
     from models.specialization import Specialization
     from models.schedule import Schedule
@@ -15,8 +15,8 @@ def init_models(db):
     from models.subscription import Subscription
 
     ms = [CertificateCourse, StudentAnswerQuestion, StudentFinishedTheme, StudentFinishedCourse,
-          StudentFinishedTest,StudentAnswerTestQuestion, Subscription, Question, Course, Test, TestQuestion,
-          UserDefinedTheme, UserDefinedCourse, CourseTheme, Schedule, Provider,
+          StudentFinishedTest,StudentAnswerTestQuestion, Subscription, Question, Course, CourseTheme, Test, TestQuestion,
+          UserDefinedCourse, UserDefinedTheme, Schedule, Provider,
           CertificateSpec, Specialization, Student]
 
     db.database.drop_tables(ms)

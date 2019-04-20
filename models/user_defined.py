@@ -27,7 +27,7 @@ class UserDefinedCourse(DB.Model):
 
 class UserDefinedTheme(DB.Model):
     ud_theme_id = PrimaryKeyField()
-    ud_course_id = ForeignKeyField(UserDefinedCourse, to_field='ud_course_id', null=False)
+    ud_course_id = ForeignKeyField(UserDefinedCourse, to_field='ud_course_id', on_delete='CASCADE', null=False)
     theme_id = ForeignKeyField(CourseTheme, to_field='theme_id', null=False)
 
     class Meta:

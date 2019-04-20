@@ -4,8 +4,6 @@ from peewee import *
 from application import DB
 
 from models.student import Student
-from models.course import CourseTheme,Question,Course
-from models.user_defined import UserDefinedTheme,UserDefinedCourse
 from models.quick_tests import Test,TestQuestion
 
 
@@ -13,9 +11,10 @@ class StudentAnswerQuestion(DB.Model):
 
     st_answer_q_id = PrimaryKeyField()
     student_id = ForeignKeyField(Student, to_field= 'student_id')
-    theme_id = ForeignKeyField(CourseTheme, to_field='theme_id')
-    ud_theme_id = ForeignKeyField(UserDefinedTheme, to_field='ud_theme_id', default=None)
-    question_id = ForeignKeyField(Question, to_field='question_id')
+    course_id = IntegerField(default=0, null=False)
+    theme_id = IntegerField(default=0, null=False)
+    ud_theme_id = IntegerField(default=0, null=False)
+    question_id = IntegerField(default=0, null=False)
     points = IntegerField(default=0, null=False)
 
     class Meta:
@@ -26,9 +25,9 @@ class StudentFinishedTheme(DB.Model):
 
     st_theme_id = PrimaryKeyField()
     student_id = ForeignKeyField(Student, to_field= 'student_id')
-    course_id = ForeignKeyField(Course, to_field='course_id')
-    theme_id = ForeignKeyField(CourseTheme, to_field='theme_id')
-    ud_theme_id = ForeignKeyField(UserDefinedTheme, to_field='ud_theme_id', default=None)
+    course_id = IntegerField(default=0, null=False)
+    theme_id = IntegerField(default=0, null=False)
+    ud_theme_id = IntegerField(default=0, null=False)
     points = IntegerField(default=0, null=False)
 
     class Meta:
@@ -39,8 +38,8 @@ class StudentFinishedCourse(DB.Model):
 
     st_theme_id = PrimaryKeyField()
     student_id = ForeignKeyField(Student, to_field= 'student_id')
-    course_id = ForeignKeyField(Course, to_field='course_id')
-    ud_course_id = ForeignKeyField(UserDefinedCourse, to_field='ud_course_id', default=None)
+    course_id = IntegerField(default=0, null=False)
+    ud_course_id = IntegerField(default=0, null=False)
     points = IntegerField(default=0, null=False)
 
     class Meta:

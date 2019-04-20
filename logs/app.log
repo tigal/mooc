@@ -2084,3 +2084,590 @@ Traceback (most recent call last):
 ImportError: cannot import name 'Student'
 2019-04-15 18:42:20,526 [MainThread  ] [WARNI]   * Debugger is active!
 2019-04-15 18:42:52,594 [MainThread  ] [WARNI]   * Debugger is active!
+2019-04-20 12:23:59,421 [MainThread  ] [ERROR]  cannot import name 'CourseTheme'
+Traceback (most recent call last):
+  File "run.py", line 40, in <module>
+    from application import APP
+  File "/home/galina/Downloads/ls_source/application.py", line 23, in <module>
+    init_models(DB)
+  File "/home/galina/Downloads/ls_source/models/__init__.py", line 7, in init_models
+    from models.certificate import CertificateCourse,CertificateSpec
+  File "/home/galina/Downloads/ls_source/models/certificate.py", line 6, in <module>
+    from models.course import Course
+  File "/home/galina/Downloads/ls_source/models/course.py", line 7, in <module>
+    from models.student_answers import StudentFinishedTheme
+  File "/home/galina/Downloads/ls_source/models/student_answers.py", line 7, in <module>
+    from models.course import CourseTheme,Question,Course
+ImportError: cannot import name 'CourseTheme'
+2019-04-20 12:24:57,830 [MainThread  ] [WARNI]   * Debugger is active!
+2019-04-20 12:25:05,913 [MainThread  ] [ERROR]  cannot import name 'CourseTheme'
+Traceback (most recent call last):
+  File "run.py", line 40, in <module>
+    from application import APP
+  File "/home/galina/Downloads/ls_source/application.py", line 23, in <module>
+    init_models(DB)
+  File "/home/galina/Downloads/ls_source/models/__init__.py", line 7, in init_models
+    from models.certificate import CertificateCourse,CertificateSpec
+  File "/home/galina/Downloads/ls_source/models/certificate.py", line 6, in <module>
+    from models.course import Course
+  File "/home/galina/Downloads/ls_source/models/course.py", line 7, in <module>
+    from models.student_answers import StudentFinishedTheme
+  File "/home/galina/Downloads/ls_source/models/student_answers.py", line 7, in <module>
+    from models.course import CourseTheme,Question,Course
+ImportError: cannot import name 'CourseTheme'
+2019-04-20 12:28:35,522 [MainThread  ] [ERROR]  cannot import name 'StudentFinishedTheme'
+Traceback (most recent call last):
+  File "run.py", line 40, in <module>
+    from application import APP
+  File "/home/galina/Downloads/ls_source/application.py", line 23, in <module>
+    init_models(DB)
+  File "/home/galina/Downloads/ls_source/models/__init__.py", line 7, in init_models
+    from models.student_answers import StudentAnswerQuestion,StudentFinishedTheme,StudentFinishedCourse,StudentFinishedTest,StudentAnswerTestQuestion
+  File "/home/galina/Downloads/ls_source/models/student_answers.py", line 7, in <module>
+    from models.course import CourseTheme,Question,Course
+  File "/home/galina/Downloads/ls_source/models/course.py", line 7, in <module>
+    from models.student_answers import StudentFinishedTheme
+ImportError: cannot import name 'StudentFinishedTheme'
+2019-04-20 12:31:47,567 [MainThread  ] [ERROR]  cannot import name 'CourseTheme'
+Traceback (most recent call last):
+  File "run.py", line 40, in <module>
+    from application import APP
+  File "/home/galina/Downloads/ls_source/application.py", line 23, in <module>
+    init_models(DB)
+  File "/home/galina/Downloads/ls_source/models/__init__.py", line 7, in init_models
+    from models.certificate import CertificateCourse,CertificateSpec
+  File "/home/galina/Downloads/ls_source/models/certificate.py", line 6, in <module>
+    from models.course import Course
+  File "/home/galina/Downloads/ls_source/models/course.py", line 7, in <module>
+    from models.student_answers import StudentFinishedTheme
+  File "/home/galina/Downloads/ls_source/models/student_answers.py", line 7, in <module>
+    from models.course import CourseTheme,Question
+ImportError: cannot import name 'CourseTheme'
+2019-04-20 12:32:28,143 [MainThread  ] [ERROR]  cannot import name 'Question'
+Traceback (most recent call last):
+  File "run.py", line 40, in <module>
+    from application import APP
+  File "/home/galina/Downloads/ls_source/application.py", line 23, in <module>
+    init_models(DB)
+  File "/home/galina/Downloads/ls_source/models/__init__.py", line 7, in init_models
+    from models.certificate import CertificateCourse,CertificateSpec
+  File "/home/galina/Downloads/ls_source/models/certificate.py", line 6, in <module>
+    from models.course import Course
+  File "/home/galina/Downloads/ls_source/models/course.py", line 7, in <module>
+    from models.student_answers import StudentFinishedTheme
+  File "/home/galina/Downloads/ls_source/models/student_answers.py", line 7, in <module>
+    from models.course import Question
+ImportError: cannot import name 'Question'
+2019-04-20 12:32:55,183 [MainThread  ] [ERROR]  cannot import name 'CourseTheme'
+Traceback (most recent call last):
+  File "run.py", line 40, in <module>
+    from application import APP
+  File "/home/galina/Downloads/ls_source/application.py", line 23, in <module>
+    init_models(DB)
+  File "/home/galina/Downloads/ls_source/models/__init__.py", line 7, in init_models
+    from models.certificate import CertificateCourse,CertificateSpec
+  File "/home/galina/Downloads/ls_source/models/certificate.py", line 6, in <module>
+    from models.course import Course
+  File "/home/galina/Downloads/ls_source/models/course.py", line 7, in <module>
+    from models.student_answers import StudentFinishedTheme
+  File "/home/galina/Downloads/ls_source/models/student_answers.py", line 7, in <module>
+    from models.user_defined import UserDefinedTheme,UserDefinedCourse
+  File "/home/galina/Downloads/ls_source/models/user_defined.py", line 8, in <module>
+    from models.course import CourseTheme
+ImportError: cannot import name 'CourseTheme'
+2019-04-20 12:34:50,261 [MainThread  ] [ERROR]  cannot import name 'CertificateCourse'
+Traceback (most recent call last):
+  File "run.py", line 40, in <module>
+    from application import APP
+  File "/home/galina/Downloads/ls_source/application.py", line 23, in <module>
+    init_models(DB)
+  File "/home/galina/Downloads/ls_source/models/__init__.py", line 7, in init_models
+    from models.certificate import CertificateCourse,CertificateSpec
+  File "/home/galina/Downloads/ls_source/models/certificate.py", line 6, in <module>
+    from models.course import Course
+  File "/home/galina/Downloads/ls_source/models/course.py", line 8, in <module>
+    from models.certificate import CertificateCourse
+ImportError: cannot import name 'CertificateCourse'
+2019-04-20 12:35:52,457 [MainThread  ] [ERROR]  cannot drop table ud_themes because other objects depend on it
+DETAIL:  constraint student_answers_ud_theme_id_fkey on table student_answers depends on table ud_themes
+constraint student_fin_themes_ud_theme_id_fkey on table student_fin_themes depends on table ud_themes
+HINT:  Use DROP ... CASCADE to drop the dependent objects too.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/peewee.py", line 2835, in execute_sql
+    cursor.execute(sql, params or ())
+psycopg2.InternalError: cannot drop table ud_themes because other objects depend on it
+DETAIL:  constraint student_answers_ud_theme_id_fkey on table student_answers depends on table ud_themes
+constraint student_fin_themes_ud_theme_id_fkey on table student_fin_themes depends on table ud_themes
+HINT:  Use DROP ... CASCADE to drop the dependent objects too.
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "run.py", line 40, in <module>
+    from application import APP
+  File "/home/galina/Downloads/ls_source/application.py", line 23, in <module>
+    init_models(DB)
+  File "/home/galina/Downloads/ls_source/models/__init__.py", line 22, in init_models
+    db.database.drop_tables(ms)
+  File "/usr/local/lib/python3.6/dist-packages/peewee.py", line 2999, in drop_tables
+    model.drop_table(**kwargs)
+  File "/usr/local/lib/python3.6/dist-packages/peewee.py", line 6021, in drop_table
+    cls._schema.drop_all(safe, drop_sequences, **options)
+  File "/usr/local/lib/python3.6/dist-packages/peewee.py", line 5235, in drop_all
+    self.drop_table(safe, **options)
+  File "/usr/local/lib/python3.6/dist-packages/peewee.py", line 5124, in drop_table
+    self.database.execute(self._drop_table(safe=safe, **options))
+  File "/usr/local/lib/python3.6/dist-packages/peewee.py", line 2848, in execute
+    return self.execute_sql(sql, params, commit=commit)
+  File "/usr/local/lib/python3.6/dist-packages/peewee.py", line 2842, in execute_sql
+    self.commit()
+  File "/usr/local/lib/python3.6/dist-packages/peewee.py", line 2627, in __exit__
+    reraise(new_type, new_type(*exc_args), traceback)
+  File "/usr/local/lib/python3.6/dist-packages/peewee.py", line 178, in reraise
+    raise value.with_traceback(tb)
+  File "/usr/local/lib/python3.6/dist-packages/peewee.py", line 2835, in execute_sql
+    cursor.execute(sql, params or ())
+peewee.InternalError: cannot drop table ud_themes because other objects depend on it
+DETAIL:  constraint student_answers_ud_theme_id_fkey on table student_answers depends on table ud_themes
+constraint student_fin_themes_ud_theme_id_fkey on table student_fin_themes depends on table ud_themes
+HINT:  Use DROP ... CASCADE to drop the dependent objects too.
+
+2019-04-20 12:36:49,632 [MainThread  ] [ERROR]  cannot drop table ud_themes because other objects depend on it
+DETAIL:  constraint student_answers_ud_theme_id_fkey on table student_answers depends on table ud_themes
+constraint student_fin_themes_ud_theme_id_fkey on table student_fin_themes depends on table ud_themes
+HINT:  Use DROP ... CASCADE to drop the dependent objects too.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/peewee.py", line 2835, in execute_sql
+    cursor.execute(sql, params or ())
+psycopg2.InternalError: cannot drop table ud_themes because other objects depend on it
+DETAIL:  constraint student_answers_ud_theme_id_fkey on table student_answers depends on table ud_themes
+constraint student_fin_themes_ud_theme_id_fkey on table student_fin_themes depends on table ud_themes
+HINT:  Use DROP ... CASCADE to drop the dependent objects too.
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "run.py", line 40, in <module>
+    from application import APP
+  File "/home/galina/Downloads/ls_source/application.py", line 23, in <module>
+    init_models(DB)
+  File "/home/galina/Downloads/ls_source/models/__init__.py", line 22, in init_models
+    db.database.drop_tables(ms)
+  File "/usr/local/lib/python3.6/dist-packages/peewee.py", line 2999, in drop_tables
+    model.drop_table(**kwargs)
+  File "/usr/local/lib/python3.6/dist-packages/peewee.py", line 6021, in drop_table
+    cls._schema.drop_all(safe, drop_sequences, **options)
+  File "/usr/local/lib/python3.6/dist-packages/peewee.py", line 5235, in drop_all
+    self.drop_table(safe, **options)
+  File "/usr/local/lib/python3.6/dist-packages/peewee.py", line 5124, in drop_table
+    self.database.execute(self._drop_table(safe=safe, **options))
+  File "/usr/local/lib/python3.6/dist-packages/peewee.py", line 2848, in execute
+    return self.execute_sql(sql, params, commit=commit)
+  File "/usr/local/lib/python3.6/dist-packages/peewee.py", line 2842, in execute_sql
+    self.commit()
+  File "/usr/local/lib/python3.6/dist-packages/peewee.py", line 2627, in __exit__
+    reraise(new_type, new_type(*exc_args), traceback)
+  File "/usr/local/lib/python3.6/dist-packages/peewee.py", line 178, in reraise
+    raise value.with_traceback(tb)
+  File "/usr/local/lib/python3.6/dist-packages/peewee.py", line 2835, in execute_sql
+    cursor.execute(sql, params or ())
+peewee.InternalError: cannot drop table ud_themes because other objects depend on it
+DETAIL:  constraint student_answers_ud_theme_id_fkey on table student_answers depends on table ud_themes
+constraint student_fin_themes_ud_theme_id_fkey on table student_fin_themes depends on table ud_themes
+HINT:  Use DROP ... CASCADE to drop the dependent objects too.
+
+2019-04-20 12:37:21,890 [MainThread  ] [ERROR]  cannot drop table ud_themes because other objects depend on it
+DETAIL:  constraint student_answers_ud_theme_id_fkey on table student_answers depends on table ud_themes
+constraint student_fin_themes_ud_theme_id_fkey on table student_fin_themes depends on table ud_themes
+HINT:  Use DROP ... CASCADE to drop the dependent objects too.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/peewee.py", line 2835, in execute_sql
+    cursor.execute(sql, params or ())
+psycopg2.InternalError: cannot drop table ud_themes because other objects depend on it
+DETAIL:  constraint student_answers_ud_theme_id_fkey on table student_answers depends on table ud_themes
+constraint student_fin_themes_ud_theme_id_fkey on table student_fin_themes depends on table ud_themes
+HINT:  Use DROP ... CASCADE to drop the dependent objects too.
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "run.py", line 40, in <module>
+    from application import APP
+  File "/home/galina/Downloads/ls_source/application.py", line 23, in <module>
+    init_models(DB)
+  File "/home/galina/Downloads/ls_source/models/__init__.py", line 22, in init_models
+    db.database.drop_tables(ms)
+  File "/usr/local/lib/python3.6/dist-packages/peewee.py", line 2999, in drop_tables
+    model.drop_table(**kwargs)
+  File "/usr/local/lib/python3.6/dist-packages/peewee.py", line 6021, in drop_table
+    cls._schema.drop_all(safe, drop_sequences, **options)
+  File "/usr/local/lib/python3.6/dist-packages/peewee.py", line 5235, in drop_all
+    self.drop_table(safe, **options)
+  File "/usr/local/lib/python3.6/dist-packages/peewee.py", line 5124, in drop_table
+    self.database.execute(self._drop_table(safe=safe, **options))
+  File "/usr/local/lib/python3.6/dist-packages/peewee.py", line 2848, in execute
+    return self.execute_sql(sql, params, commit=commit)
+  File "/usr/local/lib/python3.6/dist-packages/peewee.py", line 2842, in execute_sql
+    self.commit()
+  File "/usr/local/lib/python3.6/dist-packages/peewee.py", line 2627, in __exit__
+    reraise(new_type, new_type(*exc_args), traceback)
+  File "/usr/local/lib/python3.6/dist-packages/peewee.py", line 178, in reraise
+    raise value.with_traceback(tb)
+  File "/usr/local/lib/python3.6/dist-packages/peewee.py", line 2835, in execute_sql
+    cursor.execute(sql, params or ())
+peewee.InternalError: cannot drop table ud_themes because other objects depend on it
+DETAIL:  constraint student_answers_ud_theme_id_fkey on table student_answers depends on table ud_themes
+constraint student_fin_themes_ud_theme_id_fkey on table student_fin_themes depends on table ud_themes
+HINT:  Use DROP ... CASCADE to drop the dependent objects too.
+
+2019-04-20 12:37:46,084 [MainThread  ] [ERROR]  cannot drop table ud_themes because other objects depend on it
+DETAIL:  constraint student_answers_ud_theme_id_fkey on table student_answers depends on table ud_themes
+constraint student_fin_themes_ud_theme_id_fkey on table student_fin_themes depends on table ud_themes
+HINT:  Use DROP ... CASCADE to drop the dependent objects too.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/peewee.py", line 2835, in execute_sql
+    cursor.execute(sql, params or ())
+psycopg2.InternalError: cannot drop table ud_themes because other objects depend on it
+DETAIL:  constraint student_answers_ud_theme_id_fkey on table student_answers depends on table ud_themes
+constraint student_fin_themes_ud_theme_id_fkey on table student_fin_themes depends on table ud_themes
+HINT:  Use DROP ... CASCADE to drop the dependent objects too.
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "run.py", line 40, in <module>
+    from application import APP
+  File "/home/galina/Downloads/ls_source/application.py", line 23, in <module>
+    init_models(DB)
+  File "/home/galina/Downloads/ls_source/models/__init__.py", line 22, in init_models
+    db.database.drop_tables(ms)
+  File "/usr/local/lib/python3.6/dist-packages/peewee.py", line 2999, in drop_tables
+    model.drop_table(**kwargs)
+  File "/usr/local/lib/python3.6/dist-packages/peewee.py", line 6021, in drop_table
+    cls._schema.drop_all(safe, drop_sequences, **options)
+  File "/usr/local/lib/python3.6/dist-packages/peewee.py", line 5235, in drop_all
+    self.drop_table(safe, **options)
+  File "/usr/local/lib/python3.6/dist-packages/peewee.py", line 5124, in drop_table
+    self.database.execute(self._drop_table(safe=safe, **options))
+  File "/usr/local/lib/python3.6/dist-packages/peewee.py", line 2848, in execute
+    return self.execute_sql(sql, params, commit=commit)
+  File "/usr/local/lib/python3.6/dist-packages/peewee.py", line 2842, in execute_sql
+    self.commit()
+  File "/usr/local/lib/python3.6/dist-packages/peewee.py", line 2627, in __exit__
+    reraise(new_type, new_type(*exc_args), traceback)
+  File "/usr/local/lib/python3.6/dist-packages/peewee.py", line 178, in reraise
+    raise value.with_traceback(tb)
+  File "/usr/local/lib/python3.6/dist-packages/peewee.py", line 2835, in execute_sql
+    cursor.execute(sql, params or ())
+peewee.InternalError: cannot drop table ud_themes because other objects depend on it
+DETAIL:  constraint student_answers_ud_theme_id_fkey on table student_answers depends on table ud_themes
+constraint student_fin_themes_ud_theme_id_fkey on table student_fin_themes depends on table ud_themes
+HINT:  Use DROP ... CASCADE to drop the dependent objects too.
+
+2019-04-20 12:38:08,029 [MainThread  ] [ERROR]  cannot drop table ud_themes because other objects depend on it
+DETAIL:  constraint student_answers_ud_theme_id_fkey on table student_answers depends on table ud_themes
+constraint student_fin_themes_ud_theme_id_fkey on table student_fin_themes depends on table ud_themes
+HINT:  Use DROP ... CASCADE to drop the dependent objects too.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/peewee.py", line 2835, in execute_sql
+    cursor.execute(sql, params or ())
+psycopg2.InternalError: cannot drop table ud_themes because other objects depend on it
+DETAIL:  constraint student_answers_ud_theme_id_fkey on table student_answers depends on table ud_themes
+constraint student_fin_themes_ud_theme_id_fkey on table student_fin_themes depends on table ud_themes
+HINT:  Use DROP ... CASCADE to drop the dependent objects too.
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "run.py", line 40, in <module>
+    from application import APP
+  File "/home/galina/Downloads/ls_source/application.py", line 23, in <module>
+    init_models(DB)
+  File "/home/galina/Downloads/ls_source/models/__init__.py", line 22, in init_models
+    db.database.drop_tables(ms)
+  File "/usr/local/lib/python3.6/dist-packages/peewee.py", line 2999, in drop_tables
+    model.drop_table(**kwargs)
+  File "/usr/local/lib/python3.6/dist-packages/peewee.py", line 6021, in drop_table
+    cls._schema.drop_all(safe, drop_sequences, **options)
+  File "/usr/local/lib/python3.6/dist-packages/peewee.py", line 5235, in drop_all
+    self.drop_table(safe, **options)
+  File "/usr/local/lib/python3.6/dist-packages/peewee.py", line 5124, in drop_table
+    self.database.execute(self._drop_table(safe=safe, **options))
+  File "/usr/local/lib/python3.6/dist-packages/peewee.py", line 2848, in execute
+    return self.execute_sql(sql, params, commit=commit)
+  File "/usr/local/lib/python3.6/dist-packages/peewee.py", line 2842, in execute_sql
+    self.commit()
+  File "/usr/local/lib/python3.6/dist-packages/peewee.py", line 2627, in __exit__
+    reraise(new_type, new_type(*exc_args), traceback)
+  File "/usr/local/lib/python3.6/dist-packages/peewee.py", line 178, in reraise
+    raise value.with_traceback(tb)
+  File "/usr/local/lib/python3.6/dist-packages/peewee.py", line 2835, in execute_sql
+    cursor.execute(sql, params or ())
+peewee.InternalError: cannot drop table ud_themes because other objects depend on it
+DETAIL:  constraint student_answers_ud_theme_id_fkey on table student_answers depends on table ud_themes
+constraint student_fin_themes_ud_theme_id_fkey on table student_fin_themes depends on table ud_themes
+HINT:  Use DROP ... CASCADE to drop the dependent objects too.
+
+2019-04-20 12:38:34,471 [MainThread  ] [ERROR]  cannot drop table ud_themes because other objects depend on it
+DETAIL:  constraint student_answers_ud_theme_id_fkey on table student_answers depends on table ud_themes
+constraint student_fin_themes_ud_theme_id_fkey on table student_fin_themes depends on table ud_themes
+HINT:  Use DROP ... CASCADE to drop the dependent objects too.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/peewee.py", line 2835, in execute_sql
+    cursor.execute(sql, params or ())
+psycopg2.InternalError: cannot drop table ud_themes because other objects depend on it
+DETAIL:  constraint student_answers_ud_theme_id_fkey on table student_answers depends on table ud_themes
+constraint student_fin_themes_ud_theme_id_fkey on table student_fin_themes depends on table ud_themes
+HINT:  Use DROP ... CASCADE to drop the dependent objects too.
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "run.py", line 40, in <module>
+    from application import APP
+  File "/home/galina/Downloads/ls_source/application.py", line 23, in <module>
+    init_models(DB)
+  File "/home/galina/Downloads/ls_source/models/__init__.py", line 22, in init_models
+    db.database.drop_tables(ms)
+  File "/usr/local/lib/python3.6/dist-packages/peewee.py", line 2999, in drop_tables
+    model.drop_table(**kwargs)
+  File "/usr/local/lib/python3.6/dist-packages/peewee.py", line 6021, in drop_table
+    cls._schema.drop_all(safe, drop_sequences, **options)
+  File "/usr/local/lib/python3.6/dist-packages/peewee.py", line 5235, in drop_all
+    self.drop_table(safe, **options)
+  File "/usr/local/lib/python3.6/dist-packages/peewee.py", line 5124, in drop_table
+    self.database.execute(self._drop_table(safe=safe, **options))
+  File "/usr/local/lib/python3.6/dist-packages/peewee.py", line 2848, in execute
+    return self.execute_sql(sql, params, commit=commit)
+  File "/usr/local/lib/python3.6/dist-packages/peewee.py", line 2842, in execute_sql
+    self.commit()
+  File "/usr/local/lib/python3.6/dist-packages/peewee.py", line 2627, in __exit__
+    reraise(new_type, new_type(*exc_args), traceback)
+  File "/usr/local/lib/python3.6/dist-packages/peewee.py", line 178, in reraise
+    raise value.with_traceback(tb)
+  File "/usr/local/lib/python3.6/dist-packages/peewee.py", line 2835, in execute_sql
+    cursor.execute(sql, params or ())
+peewee.InternalError: cannot drop table ud_themes because other objects depend on it
+DETAIL:  constraint student_answers_ud_theme_id_fkey on table student_answers depends on table ud_themes
+constraint student_fin_themes_ud_theme_id_fkey on table student_fin_themes depends on table ud_themes
+HINT:  Use DROP ... CASCADE to drop the dependent objects too.
+
+2019-04-20 12:38:51,602 [MainThread  ] [ERROR]  cannot drop table ud_themes because other objects depend on it
+DETAIL:  constraint student_answers_ud_theme_id_fkey on table student_answers depends on table ud_themes
+constraint student_fin_themes_ud_theme_id_fkey on table student_fin_themes depends on table ud_themes
+HINT:  Use DROP ... CASCADE to drop the dependent objects too.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/peewee.py", line 2835, in execute_sql
+    cursor.execute(sql, params or ())
+psycopg2.InternalError: cannot drop table ud_themes because other objects depend on it
+DETAIL:  constraint student_answers_ud_theme_id_fkey on table student_answers depends on table ud_themes
+constraint student_fin_themes_ud_theme_id_fkey on table student_fin_themes depends on table ud_themes
+HINT:  Use DROP ... CASCADE to drop the dependent objects too.
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "run.py", line 40, in <module>
+    from application import APP
+  File "/home/galina/Downloads/ls_source/application.py", line 23, in <module>
+    init_models(DB)
+  File "/home/galina/Downloads/ls_source/models/__init__.py", line 22, in init_models
+    db.database.drop_tables(ms)
+  File "/usr/local/lib/python3.6/dist-packages/peewee.py", line 2999, in drop_tables
+    model.drop_table(**kwargs)
+  File "/usr/local/lib/python3.6/dist-packages/peewee.py", line 6021, in drop_table
+    cls._schema.drop_all(safe, drop_sequences, **options)
+  File "/usr/local/lib/python3.6/dist-packages/peewee.py", line 5235, in drop_all
+    self.drop_table(safe, **options)
+  File "/usr/local/lib/python3.6/dist-packages/peewee.py", line 5124, in drop_table
+    self.database.execute(self._drop_table(safe=safe, **options))
+  File "/usr/local/lib/python3.6/dist-packages/peewee.py", line 2848, in execute
+    return self.execute_sql(sql, params, commit=commit)
+  File "/usr/local/lib/python3.6/dist-packages/peewee.py", line 2842, in execute_sql
+    self.commit()
+  File "/usr/local/lib/python3.6/dist-packages/peewee.py", line 2627, in __exit__
+    reraise(new_type, new_type(*exc_args), traceback)
+  File "/usr/local/lib/python3.6/dist-packages/peewee.py", line 178, in reraise
+    raise value.with_traceback(tb)
+  File "/usr/local/lib/python3.6/dist-packages/peewee.py", line 2835, in execute_sql
+    cursor.execute(sql, params or ())
+peewee.InternalError: cannot drop table ud_themes because other objects depend on it
+DETAIL:  constraint student_answers_ud_theme_id_fkey on table student_answers depends on table ud_themes
+constraint student_fin_themes_ud_theme_id_fkey on table student_fin_themes depends on table ud_themes
+HINT:  Use DROP ... CASCADE to drop the dependent objects too.
+
+2019-04-20 12:40:43,241 [MainThread  ] [ERROR]  cannot drop table ud_themes because other objects depend on it
+DETAIL:  constraint student_answers_ud_theme_id_fkey on table student_answers depends on table ud_themes
+constraint student_fin_themes_ud_theme_id_fkey on table student_fin_themes depends on table ud_themes
+HINT:  Use DROP ... CASCADE to drop the dependent objects too.
+Traceback (most recent call last):
+  File "run.py", line 40, in <module>
+    from application import APP
+  File "/home/galina/Downloads/ls_source/application.py", line 23, in <module>
+    init_models(DB)
+  File "/home/galina/Downloads/ls_source/models/__init__.py", line 22, in init_models
+    db.database.drop_tables(ms)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 2999, in drop_tables
+    model.drop_table(**kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 6021, in drop_table
+    cls._schema.drop_all(safe, drop_sequences, **options)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 5235, in drop_all
+    self.drop_table(safe, **options)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 5124, in drop_table
+    self.database.execute(self._drop_table(safe=safe, **options))
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 2848, in execute
+    return self.execute_sql(sql, params, commit=commit)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 2842, in execute_sql
+    self.commit()
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 2627, in __exit__
+    reraise(new_type, new_type(*exc_args), traceback)
+  File "/usr/local/lib/python2.7/dist-packages/peewee.py", line 2835, in execute_sql
+    cursor.execute(sql, params or ())
+InternalError: cannot drop table ud_themes because other objects depend on it
+DETAIL:  constraint student_answers_ud_theme_id_fkey on table student_answers depends on table ud_themes
+constraint student_fin_themes_ud_theme_id_fkey on table student_fin_themes depends on table ud_themes
+HINT:  Use DROP ... CASCADE to drop the dependent objects too.
+
+2019-04-20 12:40:46,853 [MainThread  ] [ERROR]  cannot drop table ud_themes because other objects depend on it
+DETAIL:  constraint student_answers_ud_theme_id_fkey on table student_answers depends on table ud_themes
+constraint student_fin_themes_ud_theme_id_fkey on table student_fin_themes depends on table ud_themes
+HINT:  Use DROP ... CASCADE to drop the dependent objects too.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/peewee.py", line 2835, in execute_sql
+    cursor.execute(sql, params or ())
+psycopg2.InternalError: cannot drop table ud_themes because other objects depend on it
+DETAIL:  constraint student_answers_ud_theme_id_fkey on table student_answers depends on table ud_themes
+constraint student_fin_themes_ud_theme_id_fkey on table student_fin_themes depends on table ud_themes
+HINT:  Use DROP ... CASCADE to drop the dependent objects too.
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "run.py", line 40, in <module>
+    from application import APP
+  File "/home/galina/Downloads/ls_source/application.py", line 23, in <module>
+    init_models(DB)
+  File "/home/galina/Downloads/ls_source/models/__init__.py", line 22, in init_models
+    db.database.drop_tables(ms)
+  File "/usr/local/lib/python3.6/dist-packages/peewee.py", line 2999, in drop_tables
+    model.drop_table(**kwargs)
+  File "/usr/local/lib/python3.6/dist-packages/peewee.py", line 6021, in drop_table
+    cls._schema.drop_all(safe, drop_sequences, **options)
+  File "/usr/local/lib/python3.6/dist-packages/peewee.py", line 5235, in drop_all
+    self.drop_table(safe, **options)
+  File "/usr/local/lib/python3.6/dist-packages/peewee.py", line 5124, in drop_table
+    self.database.execute(self._drop_table(safe=safe, **options))
+  File "/usr/local/lib/python3.6/dist-packages/peewee.py", line 2848, in execute
+    return self.execute_sql(sql, params, commit=commit)
+  File "/usr/local/lib/python3.6/dist-packages/peewee.py", line 2842, in execute_sql
+    self.commit()
+  File "/usr/local/lib/python3.6/dist-packages/peewee.py", line 2627, in __exit__
+    reraise(new_type, new_type(*exc_args), traceback)
+  File "/usr/local/lib/python3.6/dist-packages/peewee.py", line 178, in reraise
+    raise value.with_traceback(tb)
+  File "/usr/local/lib/python3.6/dist-packages/peewee.py", line 2835, in execute_sql
+    cursor.execute(sql, params or ())
+peewee.InternalError: cannot drop table ud_themes because other objects depend on it
+DETAIL:  constraint student_answers_ud_theme_id_fkey on table student_answers depends on table ud_themes
+constraint student_fin_themes_ud_theme_id_fkey on table student_fin_themes depends on table ud_themes
+HINT:  Use DROP ... CASCADE to drop the dependent objects too.
+
+2019-04-20 12:41:31,601 [MainThread  ] [ERROR]  cannot drop table ud_themes because other objects depend on it
+DETAIL:  constraint student_answers_ud_theme_id_fkey on table student_answers depends on table ud_themes
+constraint student_fin_themes_ud_theme_id_fkey on table student_fin_themes depends on table ud_themes
+HINT:  Use DROP ... CASCADE to drop the dependent objects too.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/peewee.py", line 2835, in execute_sql
+    cursor.execute(sql, params or ())
+psycopg2.InternalError: cannot drop table ud_themes because other objects depend on it
+DETAIL:  constraint student_answers_ud_theme_id_fkey on table student_answers depends on table ud_themes
+constraint student_fin_themes_ud_theme_id_fkey on table student_fin_themes depends on table ud_themes
+HINT:  Use DROP ... CASCADE to drop the dependent objects too.
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "run.py", line 40, in <module>
+    from application import APP
+  File "/home/galina/Downloads/ls_source/application.py", line 23, in <module>
+    init_models(DB)
+  File "/home/galina/Downloads/ls_source/models/__init__.py", line 22, in init_models
+    db.database.drop_tables(ms)
+  File "/usr/local/lib/python3.6/dist-packages/peewee.py", line 2999, in drop_tables
+    model.drop_table(**kwargs)
+  File "/usr/local/lib/python3.6/dist-packages/peewee.py", line 6021, in drop_table
+    cls._schema.drop_all(safe, drop_sequences, **options)
+  File "/usr/local/lib/python3.6/dist-packages/peewee.py", line 5235, in drop_all
+    self.drop_table(safe, **options)
+  File "/usr/local/lib/python3.6/dist-packages/peewee.py", line 5124, in drop_table
+    self.database.execute(self._drop_table(safe=safe, **options))
+  File "/usr/local/lib/python3.6/dist-packages/peewee.py", line 2848, in execute
+    return self.execute_sql(sql, params, commit=commit)
+  File "/usr/local/lib/python3.6/dist-packages/peewee.py", line 2842, in execute_sql
+    self.commit()
+  File "/usr/local/lib/python3.6/dist-packages/peewee.py", line 2627, in __exit__
+    reraise(new_type, new_type(*exc_args), traceback)
+  File "/usr/local/lib/python3.6/dist-packages/peewee.py", line 178, in reraise
+    raise value.with_traceback(tb)
+  File "/usr/local/lib/python3.6/dist-packages/peewee.py", line 2835, in execute_sql
+    cursor.execute(sql, params or ())
+peewee.InternalError: cannot drop table ud_themes because other objects depend on it
+DETAIL:  constraint student_answers_ud_theme_id_fkey on table student_answers depends on table ud_themes
+constraint student_fin_themes_ud_theme_id_fkey on table student_fin_themes depends on table ud_themes
+HINT:  Use DROP ... CASCADE to drop the dependent objects too.
+
+2019-04-20 12:43:03,572 [MainThread  ] [ERROR]  cannot drop table ud_themes because other objects depend on it
+DETAIL:  constraint student_answers_ud_theme_id_fkey on table student_answers depends on table ud_themes
+constraint student_fin_themes_ud_theme_id_fkey on table student_fin_themes depends on table ud_themes
+HINT:  Use DROP ... CASCADE to drop the dependent objects too.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/peewee.py", line 2835, in execute_sql
+    cursor.execute(sql, params or ())
+psycopg2.InternalError: cannot drop table ud_themes because other objects depend on it
+DETAIL:  constraint student_answers_ud_theme_id_fkey on table student_answers depends on table ud_themes
+constraint student_fin_themes_ud_theme_id_fkey on table student_fin_themes depends on table ud_themes
+HINT:  Use DROP ... CASCADE to drop the dependent objects too.
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "run.py", line 40, in <module>
+    from application import APP
+  File "/home/galina/Downloads/ls_source/application.py", line 23, in <module>
+    init_models(DB)
+  File "/home/galina/Downloads/ls_source/models/__init__.py", line 22, in init_models
+    db.database.drop_tables(ms)
+  File "/usr/local/lib/python3.6/dist-packages/peewee.py", line 2999, in drop_tables
+    model.drop_table(**kwargs)
+  File "/usr/local/lib/python3.6/dist-packages/peewee.py", line 6021, in drop_table
+    cls._schema.drop_all(safe, drop_sequences, **options)
+  File "/usr/local/lib/python3.6/dist-packages/peewee.py", line 5235, in drop_all
+    self.drop_table(safe, **options)
+  File "/usr/local/lib/python3.6/dist-packages/peewee.py", line 5124, in drop_table
+    self.database.execute(self._drop_table(safe=safe, **options))
+  File "/usr/local/lib/python3.6/dist-packages/peewee.py", line 2848, in execute
+    return self.execute_sql(sql, params, commit=commit)
+  File "/usr/local/lib/python3.6/dist-packages/peewee.py", line 2842, in execute_sql
+    self.commit()
+  File "/usr/local/lib/python3.6/dist-packages/peewee.py", line 2627, in __exit__
+    reraise(new_type, new_type(*exc_args), traceback)
+  File "/usr/local/lib/python3.6/dist-packages/peewee.py", line 178, in reraise
+    raise value.with_traceback(tb)
+  File "/usr/local/lib/python3.6/dist-packages/peewee.py", line 2835, in execute_sql
+    cursor.execute(sql, params or ())
+peewee.InternalError: cannot drop table ud_themes because other objects depend on it
+DETAIL:  constraint student_answers_ud_theme_id_fkey on table student_answers depends on table ud_themes
+constraint student_fin_themes_ud_theme_id_fkey on table student_fin_themes depends on table ud_themes
+HINT:  Use DROP ... CASCADE to drop the dependent objects too.
+
+2019-04-20 12:45:55,029 [MainThread  ] [WARNI]   * Debugger is active!

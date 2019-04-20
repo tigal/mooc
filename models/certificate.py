@@ -3,16 +3,14 @@ from peewee import *
 
 from application import DB
 from models.student import Student
-from models.course import Course
 from models.specialization import Specialization
-from models.user_defined import UserDefinedCourse
 
 
 class CertificateCourse(DB.Model):
     cert_id = PrimaryKeyField()
     student_id = ForeignKeyField(Student, to_field='student_id', null=False, backref='certs')
-    course_id = ForeignKeyField(Course, to_field='course_id', default=None)
-    ud_course_id = ForeignKeyField(UserDefinedCourse, to_field='ud_course_id', default=None)
+    course_id = IntegerField(default=0, null=False)
+    ud_course_id = IntegerField(default=0, null=False)
     text = CharField(10000)
     issued = DateTimeField(default=datetime.now, null=False)
     end_date = DateTimeField(default=None)
