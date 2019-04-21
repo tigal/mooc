@@ -55,7 +55,7 @@ class CertificateCourse(DB.Model):
                     self.save()  # сохраняем в БД
                 else:
                     message = f'Сертификат №{self.cert_id} студента "{self.student}" не смог сменить статус на "{status_name}"'
-
+#это скорее случай с обрывом подкючения?
                 History.create(student=self.student, data=message)  # Сохраняем событие в историю
             except Exception as ex:
                 transaction.rollback()  # Если произошла ошибка, то откатыаем транзацкцию
@@ -76,6 +76,7 @@ class CertificateCourse(DB.Model):
             return True
         else:
             message = 'user not verified' #будет выделено как ошибка пока сверхну не поменяем Тру
+            self.set_status('refused')
             return False
 
     def is_validated(self):
@@ -84,6 +85,7 @@ class CertificateCourse(DB.Model):
             return True
         else:
             message = 'not validated'
+            self.set_status('refused')
             return False
 
     def cert_expired(self):
