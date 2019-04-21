@@ -26,6 +26,6 @@ class Student(DB.Model):
 
     @classmethod
     def get_certificate_list(cls):
-        sert_list = DB.database.CertificateCourse.select().where(cls.student_id == DB.database.CertificateCourse.student_id)
-        for row in sert_list:
+        cert_list = DB.database.CertificateCourse.select().where(cls.student_id == DB.database.CertificateCourse.student_id)
+        for row in cert_list:
             print(row["text"])
