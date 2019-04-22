@@ -16,7 +16,7 @@ Feature: Certificate Generation
 
   Scenario: Requested certificate update
     Given certificate is requested
-    And there is existing certificate in the DB
-    When system checks certificate in the DB
+    And there is existing certificate in DB
+    When system checks certificate in DB
     Then status of certificate is 'updated'
      And system replaces old certificate
