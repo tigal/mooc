@@ -13,3 +13,10 @@ Feature: Certificate Generation
     When system verifies userdata for certificate
     Then status of certificate is 'userdata verified'
      And system starts to validate certificate
+
+  Scenario: Requested certificate update
+    Given certificate is requested
+    And there is existing certificate in the DB
+    When system checks certificate in the DB
+    Then status of certificate is 'updated'
+     And system replaces old certificate
