@@ -93,6 +93,9 @@ class CertificateCourse(DB.Model):
             self.set_status('expired')
             return {}
 
+    def cert_updated(self):
+        pass
+
 class CertificateSpec(DB.Model):
     cert_id = PrimaryKeyField()
     student_id = ForeignKeyField(Student, to_field='student_id', null=False)
