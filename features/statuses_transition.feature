@@ -15,8 +15,8 @@ Feature: Certificate Generation
      And system starts to validate certificate
 
   Scenario: Requested certificate update
-    Given certificate is requested
-    And there is existing certificate in DB
+    Given student with id 1234 requests certificate with id 9876
+    And there is existing certificate for student 1234 with id 9876 in DB
     When system checks certificate in DB
-    Then status of certificate is 'updated'
+    Then status of certificate is "updated"
      And system replaces old certificate
