@@ -14,6 +14,7 @@ class Student(APP.db.Model):
     birthday = DateField(null=True)
     creation_date = DateTimeField(default=datetime.now, null=False)
     is_active = BooleanField(default=True)
+    user_verified = BooleanField(default=True)
 
     class Meta:
         table_name = 'students'
@@ -26,6 +27,9 @@ class Student(APP.db.Model):
 
     @classmethod
     def get_certificate_list(cls):
-        cert_list = APP.db.database.CertificateCourse.select().where(cls.student_id == APP.db.database.CertificateCourse.student_id)
+        cert_list = []#APP.db.database.CertificateCourse.select().where(cls.student_id == APP.db.database.CertificateCourse.student_id)
         for row in cert_list:
             print(row["text"])
+
+    def user_verified(self, student_id):
+        return Student.select().where(Student.student_id == student_id).user_verified

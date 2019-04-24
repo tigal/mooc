@@ -47,3 +47,32 @@
 [2019-04-24 14:19:17,685] ERROR in run: problem in extensions.api_1 - ModuleNotFoundError: No module named 'flask_restful'
 [2019-04-24 14:23:12,705] INFO in run: Launched: application 2019-04-24 14:23:12.705645
 [2019-04-24 14:23:13,746] INFO in run: Launched: application 2019-04-24 14:23:13.746277
+[2019-04-24 16:59:00,777] INFO in run: Launched: application 2019-04-24 16:59:00.777750
+[2019-04-24 16:59:01,867] INFO in run: Launched: application 2019-04-24 16:59:01.867412
+[2019-04-24 17:00:05,869] INFO in run: Launched: application 2019-04-24 17:00:05.869634
+[2019-04-24 17:02:47,944] INFO in run: Launched: application 2019-04-24 17:02:47.944213
+[2019-04-24 17:04:04,077] INFO in run: Launched: application 2019-04-24 17:04:04.077291
+[2019-04-24 17:04:04,133] ERROR in run: expected an indented block (certificate.py, line 92)
+[2019-04-24 17:06:45,006] INFO in run: Launched: application 2019-04-24 17:06:45.006498
+[2019-04-24 17:06:46,006] INFO in run: Launched: application 2019-04-24 17:06:46.006798
+[2019-04-24 17:08:28,416] INFO in run: Launched: application 2019-04-24 17:08:28.416065
+[2019-04-24 18:22:20,526] INFO in run: Launched: application 2019-04-24 18:22:20.526317
+[2019-04-24 18:22:36,044] ERROR in run: invalid syntax (certificate.py, line 64)
+[2019-04-24 19:11:40,771] INFO in run: Launched: application 2019-04-24 19:11:40.771256
+[2019-04-24 19:11:44,408] ERROR in run: cannot import name 'CertificateCourse'
+[2019-04-24 19:13:38,155] INFO in run: Launched: application 2019-04-24 19:13:38.155267
+[2019-04-24 19:13:41,360] ERROR in run: cannot import name 'CertificateCourse'
+[2019-04-24 19:20:34,932] INFO in run: Launched: application 2019-04-24 19:20:34.932048
+[2019-04-24 19:20:37,277] ERROR in run: cannot import name 'CertificateCourse'
+[2019-04-24 19:20:53,428] INFO in run: Launched: application 2019-04-24 19:20:53.428533
+[2019-04-24 19:27:28,476] INFO in run: Launched: application 2019-04-24 19:27:28.476897
+[2019-04-24 19:27:33,798] ERROR in run: cannot import name 'CertificateCourse'
+[2019-04-24 19:28:05,201] INFO in run: Launched: application 2019-04-24 19:28:05.201414
+[2019-04-24 19:28:09,305] ERROR in run: cannot import name 'CertificateCourse'
+[2019-04-24 19:30:01,977] INFO in run: Launched: application 2019-04-24 19:30:01.977362
+[2019-04-24 19:30:07,099] ERROR in run: cannot import name 'CertificateCourse'
+[2019-04-24 19:31:16,074] INFO in run: Launched: application 2019-04-24 19:31:16.074954
+[2019-04-24 19:31:19,087] INFO in run: Launched: application 2019-04-24 19:31:19.087374
+[2019-04-24 20:02:52,953] INFO in run: Launched: application 2019-04-24 20:02:52.953764
+[2019-04-24 20:02:55,008] INFO in run: Launched: application 2019-04-24 20:02:55.008819
+[2019-04-24 20:02:56,833] INFO in run: Launched: application 2019-04-24 20:02:56.833450

@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 from behave import given,when,then
-from models.certificate import CertificateCourse
+from models.course import CertificateCourse
 from models.student import Student
 
 @given('certificate is requested')
