@@ -4,64 +4,71 @@ from behave import given,when,then
 from models.course import CertificateCourse
 from models.student import Student
 
-@given('certificate is requested')
+
+@given('student with id 1234 requests certificate for course_id 2')
 def certificate_requested(context):
-    context.request_certificate_generation = True
-    context.certificate = ''
+    context.certificate = CertificateCourse.create(student_id = 1234, course_id = 2, text = '')
+    context.certificate.set_status('requested')
+
 
 @given('there is no verified userdata in DB')
 def check_user_in_DB(context):
-    context.is_verified = False
+    Student.update(verified = False).where(Student.student_id == context.certificate.student_id)
+    context.certificate.set_status('verified')
+
 
 @given('there is verified userdata in DB')
 def check_user_in_DB(context):
-    context.is_verified = False
-    if Student.get(Student.is_verified):
-        context.is_verified = True
+    context.certificate.set_status('verified')
+
 
 @given('student with id 1234 requests certificate with id 9876')
 def certificate_requested(context):
-    context.request_certificate_generation = True
-
-@given('there is existing certificate for student 1234 with id 9876 in DB')
-def certificate_in_db(context):
     try:
-        context.old_certificate = CertificateCourse.get(CertificateCourse.cert_id.where
-                                                    (CertificateCourse.cert_id == '9876' and
-                                                     CertificateCourse.student_id == '1234'))
+        context.certificate = CertificateCourse.get(CertificateCourse.cert_id == 9876)
     except CertificateCourse.DoesNotExist:
-        CertificateCourse.create(cert_id='9876', student_id = '1234')
+        context.certificate = CertificateCourse.create(student_id=1234, course_id=2, text='')
+    context.certificate.set_status('requested')
+        
 
 @given('certificate is expired')
 def set_status_expired(context):
     context.certificate.set_status('expired')
 
+
 @when('system verifies userdata for certificate')
 def verify_user(context):
-    if context.is_verified:
-        context.user_verified = True
+    pass
+
 
 @when('system checks certificate in DB')
 def certificate_existence_check(context):
     context.certificate_exists = True
 
+
 @then('there is an error that userdata should be verified')
 def print_error_verification(context):
-    if not context.user_verified:
-        print('Userdata should be verified')
+    print(context.certificate.cert_status)
+    print('Userdata should be verified')
+
 
 @then('status of certificate is "refused"')
 def set_status_refused(context):
-    context.certificate.set_status('updated')
+    context.certificate.set_status('refused')
+    print(context.certificate.cert_status)
 
-@then('status of certificate is "userdata verified"')
+
+@then('status of certificate is "user_verified"')
 def set_status_verified(context):
-    context.certificate.set_status('user verified')
+    print(context.certificate.cert_status)
+
 
 @then('status of certificate is "updated"')
 def set_status_updated(context):
-    context.old_certificate.set_status('updated')
+    context.certificate.set_status('updated')
+    print(context.certificate.cert_status)
+
 
 @then('system replaces old certificate')
 def replace_certificate(context):
-    context.old_certificate = context.new_certificate
+    pass

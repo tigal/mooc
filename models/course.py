@@ -88,6 +88,8 @@ class CertificateCourse(APP.db.Model):
     def set_updated_status(self):
         return {}
 
+    def set_refused_status(self):
+        return {}
 
 class CertificateSpec(APP.db.Model):
     cert_id = PrimaryKeyField()

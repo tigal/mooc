@@ -14,7 +14,7 @@ class Student(APP.db.Model):
     birthday = DateField(null=True)
     creation_date = DateTimeField(default=datetime.now, null=False)
     is_active = BooleanField(default=True)
-    user_verified = BooleanField(default=True)
+    verified = BooleanField(default=True)
 
     class Meta:
         table_name = 'students'
@@ -32,4 +32,4 @@ class Student(APP.db.Model):
             print(row["text"])
 
     def user_verified(self, student_id):
-        return Student.select().where(Student.student_id == student_id).user_verified
+        return Student.select().where(Student.student_id == student_id).verified
