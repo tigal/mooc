@@ -1,8 +1,9 @@
 # -*- coding: utf-8 -*-
 
+from flask import render_template
 from application import APP
 
 
-@APP.route('/')
+@APP.web_app.route('/')
 def hello():
-    return 'Hello World!'
+    return render_template('root/main.html', title='Главная', content='Hello World!')

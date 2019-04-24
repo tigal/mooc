@@ -1,12 +1,12 @@
 from datetime import datetime
 from peewee import *
 
-from application import DB
+from application import APP
 from models.course import Course
 from models.user_defined import UserDefinedCourse
 
 
-class Schedule(DB.Model):
+class Schedule(APP.db.Model):
 
     sched_id = PrimaryKeyField()
     course_id = ForeignKeyField(Course, to_field='course_id',default=None)

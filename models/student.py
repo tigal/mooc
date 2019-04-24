@@ -1,10 +1,10 @@
 from datetime import datetime
 from peewee import *
 
-from application import DB
+from application import APP
 
 
-class Student(DB.Model):
+class Student(APP.db.Model):
 
     student_id = PrimaryKeyField()
     first_name = CharField(50, null=False)
@@ -26,6 +26,6 @@ class Student(DB.Model):
 
     @classmethod
     def get_certificate_list(cls):
-        cert_list = DB.database.CertificateCourse.select().where(cls.student_id == DB.database.CertificateCourse.student_id)
+        cert_list = APP.db.database.CertificateCourse.select().where(cls.student_id == APP.db.database.CertificateCourse.student_id)
         for row in cert_list:
             print(row["text"])

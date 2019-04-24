@@ -1,7 +1,7 @@
 from datetime import datetime
 from peewee import *
 
-from application import DB
+from application import APP
 from models.specialization import Specialization
 from models.provider import Provider
 from models.student_answers import StudentFinishedTheme
@@ -10,7 +10,7 @@ from models.certificate import CertificateCourse
 cert_get_value= 0.3
 
 
-class Course(DB.Model):
+class Course(APP.db.Model):
     course_id = PrimaryKeyField()
     name = CharField(100, null=False)
     provider = ForeignKeyField(Provider, to_field='provider_id')
@@ -59,7 +59,7 @@ class Course(DB.Model):
             print ('Too less themes passed. Certificate cannot be issued')
 
 
-class CourseTheme(DB.Model):
+class CourseTheme(APP.db.Model):
     theme_id = PrimaryKeyField()
     course_id = ForeignKeyField(Course, to_field= 'course_id', backref='themes')
     name = CharField(100, null=False)
@@ -73,7 +73,7 @@ class CourseTheme(DB.Model):
         return self.name
 
 
-class Question(DB.Model):
+class Question(APP.db.Model):
     question_id = PrimaryKeyField()
     theme_id = ForeignKeyField(CourseTheme, to_field= 'theme_id')
     description = CharField(300, null=False)

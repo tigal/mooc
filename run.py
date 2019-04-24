@@ -1,43 +1,35 @@
 # -*- coding: utf-8 -*-
 
 import os
-import logging
 from datetime import datetime
 from shutil import copyfile
-
-
-def make_loggers():
-    formatter = logging.Formatter('%(asctime)s [%(threadName)-12.12s] [%(levelname)-5.5s]  %(message)s')
-    logger = logging.getLogger()
-
-    file_handler = logging.FileHandler('logs/app.log')
-    file_handler.setFormatter(formatter)
-    logger.addHandler(file_handler)
-
-    console_handler = logging.StreamHandler()
-    console_handler.setFormatter(formatter)
-    logger.addHandler(console_handler)
-    return logger
+from log import add_loggers
 
 
 if __name__ == '__main__':
 
-    log = make_loggers()
+    from application import APP
+    log = APP.web_app.logger
+    add_loggers(APP)
 
-    if not os.path.isfile('local_settings.py'):
-        log.error('Отсутствует шаблон локального файла настроек.')
-
+    if not os.path.isfile('local_settings.py.tmpl'):
+        err_txt = 'Отсутствует шаблон локального файла настроек.'
+        log.error(err_txt)
+        raise FileNotFoundError(err_txt)
     else:
 
         try:
             import local_settings
         except ImportError:
-            copyfile('local_settings.py', 'local_settings.py')
-            log.warning('Отсутствует локальный файл настроек. Файл создан из шаблона local_settings.py')
+            copyfile('local_settings.py.tmpl', 'local_settings.py')
+            log.warning('Отсутствует локальный файл настроек. Файл создан из шаблона local_settings.py.tmpl')
 
         try:
-            log.debug('Launched: application %s' % datetime.now())
-            from application import APP
-            APP.run()
+            log.info('Launched: application %s' % datetime.now())
+
+            APP(local_settings)
+            APP.init_extensions()  # Иницализируем расширения
+            APP.web_app.run()  # Запускаем приложение
+
         except Exception as e:
-            log.exception(e)
+            log.error(e)

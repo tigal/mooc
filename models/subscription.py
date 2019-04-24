@@ -1,13 +1,13 @@
 from datetime import datetime
 from peewee import *
 
-from application import DB
+from application import APP
 from models.student import Student
 from models.course import Course
 from models.user_defined import UserDefinedCourse
 
 
-class Subscription(DB.Model):
+class Subscription(APP.db.Model):
     sub_id = PrimaryKeyField()
     student_id = ForeignKeyField(Student, to_field='student_id', null=False)
     course_id = ForeignKeyField(Course, to_field='course_id', default=None)

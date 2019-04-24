@@ -1,11 +1,53 @@
-sudo -u postgres psql
+# Создание вирутального окружения с python3.6
+virtualenv -p /usr/bin/python3.6 myvenv
 
-create database lsdb with owner ls;
-CREATE USER ls WITH PASSWORD 'ls';
+# Активация вирутального окружения
+source myvenv/bin/activate
+# Деактивация вирутального окружения
+deactivate
 
 
+#-----------------------------------------------------
+
+# Установка всех либ для проекта из файла reqs.txt
+pip install -r reqs.txt
+
+# Устновка конкретной либы
 pip install <название либы>
+
+# Выгрузить список либ и их версии в файл зависимостей
 pip freeze > reqs.txt
 
-cd /home/fizradev/venv/ls
-source bin/activate
+
+#-----------------------------------------------------
+
+# Создение БД postgres в ручную
+
+# Вход под юзером postgres и запуск консоли psql
+sudo -u postgres psql
+
+# Создаём юзера для БД
+create user my_user with password 'my_password';
+
+# Создаем БД с владельцем my_user
+create database my_db with owner my_user;
+
+
+#-----------------------------------------------------
+
+# Запуск behave.
+# При запуске из консоли необходимо находится в корне директории проекта, чтобы behave могу подгрузить все необходимые либы
+
+# Запуск отдельного тесте
+behave -i features/featrure_name.feature
+
+
+# Запуск всех тестов
+behave
+
+
+#-----------------------------------------------------
+# Работа с Exim.
+sudo exim -bp
+sudo exim -Mvb
+sudo exim -bp | awk '/^ *[0-9]+[mhd]/{print "sudo exim -Mrm " $3}' | bash

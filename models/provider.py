@@ -1,10 +1,10 @@
 from datetime import datetime
 from peewee import *
 
-from application import DB
+from application import APP
 
 
-class Provider(DB.Model):
+class Provider(APP.db.Model):
 
     provider_id = PrimaryKeyField()
     name = CharField(50, null=False)

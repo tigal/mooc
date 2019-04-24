@@ -1,9 +1,9 @@
 from peewee import *
 
-from application import DB
+from application import APP
 
 
-class Specialization(DB.Model):
+class Specialization(APP.db.Model):
 
     spec_id = PrimaryKeyField()
     name = CharField(30, unique=True, null=False)

@@ -1,16 +1,15 @@
 from datetime import datetime
 
-import STATUSES as STATUSES
 from peewee import *
 from sqlalchemy.orm.attributes import History
 
-from application import DB, APP
-from models.course import Course
+from application import APP
+#from models.course import Course
 from models.student import Student
 from models.specialization import Specialization
 
 
-class CertificateCourse(DB.Model):
+class CertificateCourse(APP.db.Model):
     cert_id = PrimaryKeyField()
     student_id = ForeignKeyField(Student, to_field='student_id', null=False, backref='certs')
     course_id = IntegerField(default=0, null=False)
@@ -27,8 +26,9 @@ class CertificateCourse(DB.Model):
 
     @staticmethod
     def get_statuses():
+        pass
         #statuses = ['requested', 'validated', 'refused', 'user verified', 'userdata demand', 'generated', 'expired']
-        return STATUSES
+        #return STATUSES
 
     @classmethod
     def set_status_by_id(cls, cert_id, status_name):
@@ -80,13 +80,14 @@ class CertificateCourse(DB.Model):
             return False
 
     def is_validated(self):
-        if Course.can_get_certificate(): #положить аргументы
-            self.set_status('validated')
-            return True
-        else:
-            message = 'not validated'
-            self.set_status('refused')
-            return False
+        #if Course.can_get_certificate(): #положить аргументы
+        #    self.set_status('validated')
+        #    return True
+        #else:
+        #    message = 'not validated'
+        #    self.set_status('refused')
+        #    return False
+        return True
 
     def cert_expired(self):
         if self.end_date == datetime.now().timestamp():
@@ -96,7 +97,8 @@ class CertificateCourse(DB.Model):
     def cert_updated(self):
         pass
 
-class CertificateSpec(DB.Model):
+
+class CertificateSpec(APP.db.Model):
     cert_id = PrimaryKeyField()
     student_id = ForeignKeyField(Student, to_field='student_id', null=False)
     spec_id = ForeignKeyField(Specialization, to_field='spec_id',null=False)

@@ -1,14 +1,14 @@
 from datetime import datetime
 from peewee import *
 
-from application import DB
+from application import APP
 from models.specialization import Specialization
 from models.provider import Provider
 
 cert_get_value= 0.6
 
 
-class Test(DB.Model):
+class Test(APP.db.Model):
     test_id = PrimaryKeyField()
     name = CharField(100, null=False)
     provider_id = ForeignKeyField(Provider, to_field='provider_id')
@@ -24,7 +24,7 @@ class Test(DB.Model):
         return self.name
 
 
-class TestQuestion(DB.Model):
+class TestQuestion(APP.db.Model):
     test_question_id = PrimaryKeyField()
     test_id = ForeignKeyField(Test, to_field= 'test_id')
     description = CharField(300, null=False)

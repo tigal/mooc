@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <base href="//{{ config.DOMAIN }}/">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta charset="utf-8" />
+
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min1.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/local.css') }}">
+
+        <title>{{- title-}}</title>
+    </head>
+
+    <body class="d-flex flex-column h-100">
+        <main role="main" class="flex-shrink-0">
+            <div class="container">
+                {% for category, message in get_flashed_messages(with_categories=true) %}
+                    <div class="alert alert-block alert-{{ category }}">
+                        <a class="close" data-dismiss="alert" href="#">×</a>
+                        <p>{{ message }}</p>
+                    </div>
+                {% endfor %}
+                {%- block content -%}{%- endblock -%}
+            </div>
+        </main>
+
+        <footer class="footer mt-auto py-3">
+            <div class="container">
+                <span class="text-muted">footer content here</span>
+            </div>
+        </footer>
+
+        <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/bootstrap.min1.js') }}"></script>
+    </body>
+</html>

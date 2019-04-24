@@ -1,0 +1,13 @@
+{% extends "admin/models/index.html" %} {# override the default edit template #}
+
+{# override any blocks here #}
+
+{% block object_action_links %}
+    <li><a href="{{ url_for(model_admin.get_url_name('send_message'), customer_id=object._pk) }}">Send massage</a></li>
+{#    <li><a href="{{ url_for(model_admin.get_url_name('send_telegram_massage'), customer_id=object._pk) }}">Send telegram massage</a></li>#}
+{#    <li><a href="{{ url_for(model_admin.get_url_name('send_telegram_massage'), customer_id=object._pk) }}"><i class="fab fa-telegram"></i></a></li>#}
+{% endblock %}
+
+{#{% block extra_script %}#}
+{#    <link rel="stylesheet" href="{{ url_for('static', filename='css/all.min.css') }}">#}
+{#{% endblock %}#}

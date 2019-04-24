@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
 
-from application import DB
 from behave import given,when,then
 from models.course import Course,CourseTheme
 from models.student_answers import StudentFinishedTheme

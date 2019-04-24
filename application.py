@@ -1,48 +1,49 @@
 # -*- coding: utf-8 -*-
 
+
 from flask import Flask
-from flask_peewee.db import Database
-from flask_peewee.rest import RestAPI
-
-from models import init_models
-from services.pw_api import init_api
-from ui.admin import init_admin
-import local_settings
+from pydoc import locate
 
 
-def create_app():
-    app = Flask(__name__)  # Создаем экземпляр класса Flask-приложения
-    app.url_map.strict_slashes = local_settings.TRAILING_SLASH  # Указываем игнорирововать слеша в конце url
-    app.config.from_object(local_settings)  # Передаём остальные настройки в приложение
-    return app
+class ConstructApp(object):
+
+    def __init__(self):
+        self.extensions = {}
+        self.web_app = self.init_web_app()
+
+    def __call__(self, settings, force_init_web_app=False):
+        if force_init_web_app is True:
+            self.web_app = self.init_web_app()
+        self.set_settings(settings)
+
+    @staticmethod
+    def init_web_app():
+        return Flask(__name__, static_url_path='/static',
+                     static_folder='static')  # Создаем экземпляр класса Flask-приложения
+
+    def set_settings(self, settings):
+
+        self.web_app.url_map.strict_slashes = settings.TRAILING_SLASH  # Указываем игнорирововать слеша в конце url
+        self.web_app.config.from_object(settings)  # Передаём остальные настройки в приложение
+
+    def init_extensions(self):
+        extensions = self.web_app.config['APP_EXTENSIONS']
+
+        if not isinstance(extensions, tuple):
+            raise TypeError('The extensions must be a tuple')
+
+        for path in extensions:
+            ex = locate(path)(self)
+
+            if ex.extension is NotImplemented:
+                raise NotImplementedError('The extension is not implemented')
+
+            else:
+                if hasattr(self.web_app, ex.name):
+                    raise AttributeError(f'The base application already has extension "{ex.name}"')
+                setattr(self, ex.name, ex.extension)
+                self.extensions[ex.name] = ex
+                ex.configurate_extension()
 
 
-APP = create_app()  # Инициируем приложение
-
-DB = Database(APP)  # Инициируем работу с БД. Тут же создаюётся таблицы, если их нет в БД.
-init_models(DB)
-
-API = RestAPI(APP)  # Инициируем RestAPI от peewee
-init_api(API)
-
-ADMIN = init_admin(APP, DB)  # Инициируем Админку
-
-
-import ui.root  # Импортируем view для главной страницы
-
-
-# Api на flask_restful и роуты для API
-#from flask_restful import Api
-
-#api = Api(APP)
-
-
-#from services.product import GetProducts, AddProduct, DeleteProduct, UpdateProduct
-#api.add_resource(GetProducts, '/product/get')
-#api.add_resource(AddProduct, '/product/add/<int:category_id>')
-#api.add_resource(DeleteProduct, '/product/delete/<int:product_id>')
-#api.add_resource(UpdateProduct, '/product/update/<int:product_id>')
-
-#from services.categories import AddCategory, GetCategories
-#api.add_resource(AddCategory, '/category/add/<string:category_name>')
-#api.add_resource(GetCategories, '/category/get')
+APP = ConstructApp()

@@ -1,0 +1,14 @@
+{% extends "admin/models/index.html" %} {# override the default edit template #}
+
+{# override any blocks here #}
+
+{% block object_action_links %}
+{#    {{ object |show_dir }}#}
+    {% if object.order_status == object.get_statuses().PRE_ORDER %}
+        <li><a href="{{ url_for(model_admin.get_url_name('set_status'), order_id=object._pk, status=object.get_statuses().RESERVE) }}">Reserve</a></li>
+    {% elif object.order_status == object.get_statuses().RESERVE %}
+        <li><a href="{{ url_for(model_admin.get_url_name('set_status'), order_id=object._pk, status=object.get_statuses().PAYMENT) }}">Payment</a></li>
+    {% elif object.order_status == object.get_statuses().PAYMENT %}
+        <li><a href="{{ url_for(model_admin.get_url_name('set_status'), order_id=object._pk, status=object.get_statuses().PAID) }}">Paid</a></li>
+    {% endif %}
+{% endblock %}
