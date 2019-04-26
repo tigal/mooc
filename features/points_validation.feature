@@ -4,7 +4,7 @@ Feature: Points validation
     Given student with id 1234 requests certificate for course_id 2
     And student has points less than needed in this course
     When system verifies userdata for certificate
-    Then there is an error that there are not enough points
+    Then there is an error that there is not enough points
     And status of certificate is "refused"
 
    Scenario: Validated user's points
